@@ -3,8 +3,9 @@
 
 // Variables
 
-var iOSProgrammingLanguage = "Swift"
+var iOSProgrammingLanguage = "ObjectiveC"
 
+iOSProgrammingLanguage = "Swift"
 
 // Constants
 
@@ -46,13 +47,9 @@ var aboutSwiftUnitTest = "The \(swiftFrameworkforUnitTest) library is designed t
 
 var swiftYearCreated = 2014
 
-
 // Double
-var swiftVersion = 5.1
 
-swiftVersion = 5.2
-
-print(swiftVersion)
+var swiftVersion = 5.2
 
 // Bool
 
