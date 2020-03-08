@@ -42,7 +42,6 @@ var swiftFrameworkforUnitTest = "XCTest"
 
 var aboutSwiftUnitTest = "The \(swiftFrameworkforUnitTest) library is designed to provide a common framework for writing unit tests in Swift, for Swift packages and applications."
 
-
 // Integers
 
 var swiftYearCreated = 2014
