@@ -1,5 +1,7 @@
 // Created by @pamnovalli
 
+// Functions
+
 var swiftVersions = [5.1, 4.2, 3.1, 3.0, 2.2, 2.1, 1.2]
 
 func showVersion(version: Double) {
@@ -34,18 +36,32 @@ enum VersionError: Error {
     case versionDoesNotExist
 }
 
-func checkVersion(_ version: Version) throws -> Bool {
-    if swiftVersions.contains(version.number) == false {
-        print("This is not a valid version value")
-        throw VersionError.versionDoesNotExist
-    }
-    return true
+var atualSwiftVersion = 5.1
+
+func updateSwiftVersion(version: inout Double){
+    version = 5.2
 }
 
-var version = Version(number: 6.0)
+updateSwiftVersion(version: &atualSwiftVersion)
+print(atualSwiftVersion)
 
-try? checkVersion(version)
 
-version = Version(number: 5.1)
+// Throwing functions
 
-try? checkVersion(version)
+func checkVersion(_ version: Version) throws -> Bool {
+    if swiftVersions.contains(version.number) == true {
+         return true
+    } else {
+        throw VersionError.versionDoesNotExist
+    }
+}
+
+var version = Version(number: 5.1)
+
+do {
+    try checkVersion(version)
+    print("This version is valid")
+} catch {
+    print("This is not a valid version value")
+}
+
