@@ -4,13 +4,17 @@
 
 var swiftVersions = [5.1, 4.2, 3.1, 3.0, 2.2, 2.1, 1.2]
 
-for versions in swiftVersions {
-    print(versions)
+var iOSVersions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+for version in swiftVersions {
+    print(version)
 }
 
 for _ in 1...4 {
     print("Swift is the best language")
 }
+
+print("-----------------")
 
 // While loops
 
@@ -21,6 +25,8 @@ while index < swiftVersions.count {
     index += 1
 }
 
+print("-------------------------------")
+
 // Repeat loops
 
 var item = 0
@@ -30,6 +36,7 @@ repeat {
     item += 1
 } while item < swiftVersions.count
 
+print("-------------------------------")
 
 // Exiting loops
 
@@ -38,11 +45,13 @@ var count = 0
 while count < swiftVersions.count {
     print(swiftVersions[count])
     if count == 3 {
-        print("this is the last 4 versions of swift")
+        print("This is the last 4 versions of swift")
         break
     }
     count += 1
 }
+
+print("-------------------------------")
 
 // Exiting multiple loops
 
@@ -55,22 +64,30 @@ swiftLoop: for i in 1...10 {
     }
 }
 
+print("-------------------------------")
+
 // Skipping items
 
-for swift in 1...10 {
-    if swift % 2 == 1 {
+var iOSVersionMinimum = 10
+
+var iOSVersionsSupport: [Int] = []
+
+for iOS in 0...iOSVersions.count {
+    if iOS < iOSVersionMinimum {
         continue
     }
-
-    print(swift)
+    iOSVersionsSupport.append(iOS)
 }
+print(iOSVersionsSupport)
+
+print("-------------------------------")
 
 // Infinite loops
 
 var counter = 0
 
 while true {
-    print("Swift is a best Language")
+    print("I love swift language")
     counter += 1
 
     if counter == 100 {
