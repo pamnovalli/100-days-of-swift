@@ -7,48 +7,53 @@ var iOSProgrammingLanguage = "ObjectiveC"
 
 iOSProgrammingLanguage = "Swift"
 
+print("----------------------------------------------")
+
 // Constants
 
 let swift = "The best programming language"
+
+print("----------------------------------------------")
 
 // Strings
 
 //Swift strings are modeled as collections of characters that are encoded using the very common UTF-8 text encoding.
 
-var swiftFrameworkforUserInterface = "UIKit"
-swiftFrameworkforUserInterface.utf8.count
-swiftFrameworkforUserInterface.count
+var language = "Swift"
+language.utf8.count
+language.count
 
-var secondCharacter = swiftFrameworkforUserInterface.index(after: swiftFrameworkforUserInterface.startIndex)
-print(swiftFrameworkforUserInterface[secondCharacter])
+var secondCharacter = language.index(after: language.startIndex)
+print(language[secondCharacter])
+
+print("----------------------------------------------")
 
 // Multi-line strings
 
-var foundationFramework = """
-The Foundation framework defines a base layer of functionality that is required for almost all applications. It provides primitive classes and introduces several paradigms that define functionality not provided by the language or runtime. It is designed with these goals in mind:
-
-Provide a small set of basic utility classes.
-Make software development easier by introducing consistent conventions.
-Support internationalization and localization, to make software accessible to users around the world.
-Provide a level of OS independence, to enhance portability.
-
+var swiftFeatures = """
+Closures unified with function pointers", "Tuples and multiple return values", "Generics", "Fast and concise iteration over a range or collection", "Structs that support methods, extensions, and protocols", "Functional programming patterns, e.g., map and filter", "Powerful error handling built-in
 """
-print(foundationFramework)
+print(swiftFeatures)
 
+print("----------------------------------------------")
 
 // String interpolation
 
-var swiftFrameworkforUnitTest = "XCTest"
+var aboutSwiftUnitTest = "The \(language) has the following features: \(swiftFeatures)"
 
-var aboutSwiftUnitTest = "The \(swiftFrameworkforUnitTest) library is designed to provide a common framework for writing unit tests in Swift, for Swift packages and applications."
+print("----------------------------------------------")
 
 // Integers
 
 var swiftYearCreated = 2014
 
+print("----------------------------------------------")
+
 // Double
 
 var swiftVersion = 5.2
+
+print("----------------------------------------------")
 
 // Bool
 

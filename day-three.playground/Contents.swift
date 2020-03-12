@@ -4,9 +4,14 @@ import Foundation
 
 // Arithmetic Operators
 
+
+var swiftVersion = ((5.1 + 0.1) * 100).rounded()/100
+
 var swiftCurrentVersion = ((5.1 + 0.1) * 100).rounded()/100
 
-var swiftVersion: Double = (swiftCurrentVersion - 0.9) - 0.1
+swiftVersion = (swiftCurrentVersion - 0.9) - 0.1
+
+print("-----------------------------------")
 
 // Operator Overloading
 
@@ -16,12 +21,15 @@ var phrase = " is a best language"
 
 var bestLanguage = language + phrase
 
+print("-----------------------------------")
+
 // Compound Operators
 
 swiftVersion += (0.9) + 0.1
 
 swiftVersion -= (0.9) + 0.1
 
+print("-----------------------------------")
 
 // Comparison Operators
 
@@ -32,12 +40,13 @@ swiftCurrentVersion < swiftVersion
 swiftCurrentVersion >= swiftVersion
 swiftCurrentVersion <= swiftVersion
 
+print("-----------------------------------")
 
 // Conditions
 
 var newSwiftFeatures: String
 
-if swiftCurrentVersion == 5.2 {
+if swiftVersion == swiftCurrentVersion {
     newSwiftFeatures = """
     Key Path Expressions as Functions,
     Callable values of user-defined nominal types,
@@ -48,11 +57,15 @@ if swiftCurrentVersion == 5.2 {
     newSwiftFeatures = "No updates available at this time"
 }
 
+print("-----------------------------------")
+
 //Combining conditions
 
 var xcodeVersion = 11
 
-if swiftCurrentVersion == 5.2 && xcodeVersion >= 11  {
+var xcodeCurrentVersion = 11
+
+if  swiftVersion == swiftCurrentVersion && xcodeVersion >= xcodeCurrentVersion  {
     print("You can test the new features of the Swift")
 }
 
@@ -60,9 +73,13 @@ if swiftVersion == 4.2 || swiftVersion > 4.2 {
     print("You have access to Derived collections of enum cases")
 }
 
+print("-----------------------------------")
+
 // The ternary operator
 
-swiftCurrentVersion == 5.1 ? print("Update for Swift 5.2") : print("Your version is already updated")
+swiftVersion < swiftCurrentVersion ? print("Update for Swift Version") : print("Your version is already updated")
+
+print("-----------------------------------")
 
 
 // Switch statements
@@ -93,14 +110,18 @@ default:
     print("Swift version 5.2")
 }
 
+print("-----------------------------------")
+
 // Range operators
 
+var currentXcodeVersion = 11
+
 switch xcodeVersion {
-case 1..<11:
-    print("You do not have access to updates")
+case 0..<currentXcodeVersion:
+    print("You do not have access to swift updates")
     break
 default:
-    print("You have access to updates")
+    print("You have access to swift updates")
 }
 
 

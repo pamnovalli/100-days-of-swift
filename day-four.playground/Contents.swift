@@ -14,7 +14,7 @@ for _ in 1...4 {
     print("Swift is the best language")
 }
 
-print("-----------------")
+print("-------------------------------")
 
 // While loops
 

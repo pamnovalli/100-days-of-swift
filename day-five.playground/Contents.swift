@@ -36,15 +36,16 @@ enum VersionError: Error {
     case versionDoesNotExist
 }
 
-var atualSwiftVersion = 5.1
+var currentSwiftVersion = 5.1
 
 func updateSwiftVersion(version: inout Double){
     version = 5.2
 }
 
-updateSwiftVersion(version: &atualSwiftVersion)
-print(atualSwiftVersion)
+updateSwiftVersion(version: &currentSwiftVersion)
+print(currentSwiftVersion)
 
+print("----------------------------------------------")
 
 // Throwing functions
 
