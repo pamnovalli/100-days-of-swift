@@ -52,7 +52,21 @@ print("----------------------------------------------")
    Collection that composed of keys and values. Items are accessed by keys.
 */
 
-
+var ios = [
+    1: ["multitouch screen", "Visual Voicemail", "iTunes integration", "Safari browser", "Music app​​"],
+    2: ["App Store​", "Improved Maps app​"],
+    3: ["Copy and paste​", "Spotlight​ search​", "Recording videos"],
+    4: ["FaceTime", "Multitasking", "AirPlay", "AirPrint", "iBooks", "Personal Hotspot"],
+    5: ["iCloud", "iMessage", "Notification Center", "Wireless syncing and activation"],
+    6: ["Apple Maps", "Do Not Disturb", "Passbook (now Wallet)"],
+    7: ["Activation Lock", "AirDrop", "CarPlay", "Control Center", "Touch ID"],
+    8: ["Apple Music", "Apple Pay", "iCloud Drive", "Handoff", "Family Sharing", "Third-party keyboards", "HomeKit"],
+    9: ["Night Shift", "Low Power Mode", "Public beta program"],
+    10: ["​iMessage apps", "Delete built-in apps"],
+    11: ["Augmented Reality", "AirPlay 2", "Major enhancements on iPad"],
+    12: ["Grouped Notifications", "Screen Time", "ARKit 2", "Siri improvements", "Memoji"],
+    13: ["Dark Mode", "Sign In With Apple", "New privacy and security options", "Portrait Lighting", "Look Around", " improved Siri voice", "Overhauled stock apps"]
+    ]
 
 
 
