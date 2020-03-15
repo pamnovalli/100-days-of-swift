@@ -39,7 +39,7 @@ print("----------------------------------------------")
 
 // String interpolation
 
-var aboutSwiftUnitTest = "The \(language) has the following features: \(swiftFeatures)"
+var features = "The \(language) has the following features: \(swiftFeatures)"
 
 print("----------------------------------------------")
 
