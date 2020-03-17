@@ -3,7 +3,6 @@
 // Protocols and extensions
 
 protocol iOSDeveloper {
-    var name: String { get set }
     var appleID: Int { get set }
     
     func code()
@@ -11,7 +10,7 @@ protocol iOSDeveloper {
 }
 
 extension iOSDeveloper {
-    mutating func consultAppleID() {
+     func consultAppleID() {
         print("Your apple ID is \(appleID)")
     }
 }
@@ -28,10 +27,10 @@ struct Developer: iOSDeveloper {
 
 var iosDev = Developer(appleID: 11111111, name: "Pamela")
 iosDev.consultAppleID()
+iosDev.code()
 
 print("---------------------------------------------------")
 
-var swiftDevsNickName = Set(["@pamnovalli", "@twostraws", "@JohnSundell", "@mattgallagher", "@ericasadun"])
 var swiftFeatures = ["Closures unified with function pointers", "Tuples and multiple return values", "Generics", "Fast and concise iteration over a range or collection", "Structs that support methods, extensions, and protocols", "Functional programming patterns, e.g., map and filter", "Powerful error handling built-in"]
 
 protocol NSObjectProtocol {
@@ -59,7 +58,13 @@ class TableView: TableViewDataSource {
     }
 }
 
+var tableView = TableView()
+tableView.numberOfRowsInSection(number: 10)
+tableView.cellForRowAtIndexPath(indexPath: 2)
+
 print("----------------------------------------------")
+
+var swiftDevsNickName = Set(["@pamnovalli", "@twostraws", "@JohnSundell", "@mattgallagher", "@ericasadun"])
 
 extension Int {
     func calculateModule(number: Int) -> Int {
