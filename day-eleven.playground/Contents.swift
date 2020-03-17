@@ -29,8 +29,13 @@ struct Developer: iOSDeveloper {
 var iosDev = Developer(appleID: 11111111, name: "Pamela")
 iosDev.consultAppleID()
 
+print("---------------------------------------------------")
+
+var swiftDevsNickName = Set(["@pamnovalli", "@twostraws", "@JohnSundell", "@mattgallagher", "@ericasadun"])
+var swiftFeatures = ["Closures unified with function pointers", "Tuples and multiple return values", "Generics", "Fast and concise iteration over a range or collection", "Structs that support methods, extensions, and protocols", "Functional programming patterns, e.g., map and filter", "Powerful error handling built-in"]
+
 protocol NSObjectProtocol {
-    var description: String { get }
+    var protocolConform: Bool? { get set }
 }
 
 
@@ -40,19 +45,21 @@ protocol TableViewDataSource: NSObjectProtocol {
 }
 
 class TableView: TableViewDataSource {
-   
+    var protocolConform: Bool?
     var description: String = ""
     var numberOfRows: Int?
-    var cell: Int?
+    var cell: String?
     
     func numberOfRowsInSection(number: Int) {
         self.numberOfRows = number
     }
     
     func cellForRowAtIndexPath(indexPath: Int) {
-        self.cell? = indexPath
+        self.cell? = swiftFeatures[indexPath]
     }
 }
+
+print("----------------------------------------------")
 
 extension Int {
     func calculateModule(number: Int) -> Int {
@@ -64,9 +71,6 @@ extension Int {
 var number = 12
 number.calculateModule(number: 4)
 
-
-var swiftDevsNickName = Set(["@pamnovalli", "@twostraws", "@JohnSundell", "@mattgallagher", "@ericasadun"])
-var swiftFeatures = ["Closures unified with function pointers", "Tuples and multiple return values", "Generics", "Fast and concise iteration over a range or collection", "Structs that support methods, extensions, and protocols", "Functional programming patterns, e.g., map and filter", "Powerful error handling built-in"]
 
 extension Collection {
     func summarize() {
