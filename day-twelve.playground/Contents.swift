@@ -90,4 +90,21 @@ if let check = try? checkVersion(version) {
     print("This is not a valid version value")
 }
 
+// Typecasting
 
+class Developer { }
+class AndroidDeveloper: Developer { }
+
+class iOSDeveloper: Developer {
+    func code() {
+        print("Tec tec tec tec")
+    }
+}
+
+let developers = [iOSDeveloper(), AndroidDeveloper(), iOSDeveloper(), AndroidDeveloper()]
+
+for developer in developers {
+    if let iOSDev = developer as? iOSDeveloper {
+        iOSDev.code()
+    }
+}
