@@ -1,7 +1,7 @@
 // Created by @pamnovalli
 
 /* Array
- Orderly collection where you can add or remove items. Can have repeated items
+ Orderly collection where you can add or remove items. Can have repeated items.
 */
 
 var swiftFeatures = ["Closures unified with function pointers", "Tuples and multiple return values", "Generics", "Fast and concise iteration over a range or collection", "Structs that support methods, extensions, and protocols", "Functional programming patterns, e.g., map and filter", "Powerful error handling built-in"]
@@ -24,7 +24,8 @@ print(swiftVersions.count)
 print("----------------------------------------------")
 
 /* Set
- Collection that does not allow repetition of items. Allows you to perform quick searches
+ An enumeration is a type that enumerates a finite set of values, as raw values, as strings or whole numbers. They are really useful when modeling items like options, states or anything else that can be described using a predefined number of values.
+
 */
 
 var swiftDevsNickName = Set(["@pamnovalli", "@twostraws", "@JohnSundell", "mattgallagher", "@ericasadun"])
@@ -69,7 +70,6 @@ var ios = [
     ]
 
 
-
 print("----------------------------------------------")
 
 /* Enumerations
@@ -79,9 +79,23 @@ print("----------------------------------------------")
 enum SwiftPrimitiveTypes {
     case String(string: String)
     case Bool(bool: Bool = true)
-    case Int
-    case Double
+    case Int(int: Int)
+    case Double(double: Double)
 }
 
 let stringExample = SwiftPrimitiveTypes.String(string: "This is a string example")
 let boolExample = SwiftPrimitiveTypes.Bool()
+
+
+enum OperationalSystem: String {
+    case iOS = "ios"
+    case Android = "android"
+    case Mac = "mac"
+    case Windows = "windows"
+    case Linux = "linux"
+}
+
+var os = OperationalSystem(rawValue: "ios")
+
+print(os?.rawValue)
+
