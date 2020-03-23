@@ -1,15 +1,15 @@
 //
-//  day_sixteenTests.swift
-//  day-sixteenTests
+//  one_projectTests.swift
+//  one-projectTests
 //
-//  Created by Pamela Ianovalli on 21/03/20.
+//  Created by Pamela Ianovalli on 23/03/20.
 //  Copyright © 2020 Pamela Ianovalli. All rights reserved.
 //
 
 import XCTest
-@testable import day_sixteen
+@testable import one_project
 
-class day_sixteenTests: XCTestCase {
+class one_projectTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
