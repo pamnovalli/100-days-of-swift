@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B36957ED2434056E00EB5BF0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36957EC2434056E00EB5BF0 /* TableViewController.swift */; };
+		B36957F62434154800EB5BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36957F52434154800EB5BF0 /* Main.storyboard */; };
 		B3786CDF2431737C00B82CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3786CDE2431737C00B82CCC /* AppDelegate.swift */; };
 		B3786CE12431737C00B82CCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3786CE02431737C00B82CCC /* SceneDelegate.swift */; };
-		B3786CE32431737C00B82CCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3786CE22431737C00B82CCC /* ViewController.swift */; };
-		B3786CE62431737C00B82CCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3786CE42431737C00B82CCC /* Main.storyboard */; };
+		B3786CE32431737C00B82CCC /*  EasyBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3786CE22431737C00B82CCC /*  EasyBrowserViewController.swift */; };
 		B3786CE82431738100B82CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3786CE72431738100B82CCC /* Assets.xcassets */; };
 		B3786CEB2431738100B82CCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3786CE92431738100B82CCC /* LaunchScreen.storyboard */; };
 		B3786CF62431738100B82CCC /* four_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3786CF52431738100B82CCC /* four_projectTests.swift */; };
@@ -35,11 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B36957EC2434056E00EB5BF0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B36957F52434154800EB5BF0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		B3786CDB2431737C00B82CCC /* four-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "four-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3786CDE2431737C00B82CCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3786CE02431737C00B82CCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B3786CE22431737C00B82CCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B3786CE52431737C00B82CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3786CE22431737C00B82CCC /*  EasyBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " EasyBrowserViewController.swift"; sourceTree = "<group>"; };
 		B3786CE72431738100B82CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3786CEA2431738100B82CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3786CEC2431738100B82CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,10 +103,11 @@
 			children = (
 				B3786CDE2431737C00B82CCC /* AppDelegate.swift */,
 				B3786CE02431737C00B82CCC /* SceneDelegate.swift */,
-				B3786CE22431737C00B82CCC /* ViewController.swift */,
-				B3786CE42431737C00B82CCC /* Main.storyboard */,
+				B36957EC2434056E00EB5BF0 /* TableViewController.swift */,
+				B3786CE22431737C00B82CCC /*  EasyBrowserViewController.swift */,
 				B3786CE72431738100B82CCC /* Assets.xcassets */,
 				B3786CE92431738100B82CCC /* LaunchScreen.storyboard */,
+				B36957F52434154800EB5BF0 /* Main.storyboard */,
 				B3786CEC2431738100B82CCC /* Info.plist */,
 			);
 			path = "four-project";
@@ -234,7 +237,7 @@
 			files = (
 				B3786CEB2431738100B82CCC /* LaunchScreen.storyboard in Resources */,
 				B3786CE82431738100B82CCC /* Assets.xcassets in Resources */,
-				B3786CE62431737C00B82CCC /* Main.storyboard in Resources */,
+				B36957F62434154800EB5BF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3786CE32431737C00B82CCC /* ViewController.swift in Sources */,
+				B3786CE32431737C00B82CCC /*  EasyBrowserViewController.swift in Sources */,
 				B3786CDF2431737C00B82CCC /* AppDelegate.swift in Sources */,
 				B3786CE12431737C00B82CCC /* SceneDelegate.swift in Sources */,
+				B36957ED2434056E00EB5BF0 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B3786CE42431737C00B82CCC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B3786CE52431737C00B82CCC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B3786CE92431738100B82CCC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

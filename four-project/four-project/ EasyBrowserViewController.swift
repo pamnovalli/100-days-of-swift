@@ -9,10 +9,11 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController {
+class EasyBrowserViewController: UIViewController {
     
     var webView: WKWebView!
     var progressView: UIProgressView!
+    var site: String?
     var websites = ["apple.com", "hackingwithswift.com"]
     
     override func loadView() {
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "https://" + websites[0])!
+        let url = URL(string: "https://" + site!)!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openTapped))
@@ -79,7 +80,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: WKNavigationDelegate {
+extension EasyBrowserViewController: WKNavigationDelegate {
     
 }
 
