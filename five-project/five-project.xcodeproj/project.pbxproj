@@ -15,7 +15,6 @@
 		B35A05C22438179700530C6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35A05C02438179700530C6E /* LaunchScreen.storyboard */; };
 		B35A05CD2438179700530C6E /* five_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35A05CC2438179700530C6E /* five_projectTests.swift */; };
 		B35A05D82438179700530C6E /* five_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35A05D72438179700530C6E /* five_projectUITests.swift */; };
-		B35A05E62438185A00530C6E /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35A05E52438185A00530C6E /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		B35A05D32438179700530C6E /* five-projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "five-projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35A05D72438179700530C6E /* five_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = five_projectUITests.swift; sourceTree = "<group>"; };
 		B35A05D92438179700530C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B35A05E52438185A00530C6E /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = start.txt; path = "../../HackingWithSwift/Classic/project5-files/start.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 				B35A05BE2438179700530C6E /* Assets.xcassets */,
 				B35A05C02438179700530C6E /* LaunchScreen.storyboard */,
 				B35A05C32438179700530C6E /* Info.plist */,
-				B35A05E52438185A00530C6E /* start.txt */,
 			);
 			path = "five-project";
 			sourceTree = "<group>";
@@ -236,7 +233,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B35A05C22438179700530C6E /* LaunchScreen.storyboard in Resources */,
-				B35A05E62438185A00530C6E /* start.txt in Resources */,
 				B35A05BF2438179700530C6E /* Assets.xcassets in Resources */,
 				B35A05BD2438179300530C6E /* Main.storyboard in Resources */,
 			);
