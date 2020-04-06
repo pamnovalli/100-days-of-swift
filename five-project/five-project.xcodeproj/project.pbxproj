@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B33821EB243ACC4400EE6379 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = B33821EA243ACC4400EE6379 /* start.txt */; };
 		B35A05B62438179300530C6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35A05B52438179300530C6E /* AppDelegate.swift */; };
 		B35A05B82438179300530C6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35A05B72438179300530C6E /* SceneDelegate.swift */; };
 		B35A05BA2438179300530C6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35A05B92438179300530C6E /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B33821EA243ACC4400EE6379 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = SOURCE_ROOT; };
 		B35A05B22438179300530C6E /* five-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "five-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35A05B52438179300530C6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B35A05B72438179300530C6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				B35A05BE2438179700530C6E /* Assets.xcassets */,
 				B35A05C02438179700530C6E /* LaunchScreen.storyboard */,
 				B35A05C32438179700530C6E /* Info.plist */,
+				B33821EA243ACC4400EE6379 /* start.txt */,
 			);
 			path = "five-project";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B35A05C22438179700530C6E /* LaunchScreen.storyboard in Resources */,
+				B33821EB243ACC4400EE6379 /* start.txt in Resources */,
 				B35A05BF2438179700530C6E /* Assets.xcassets in Resources */,
 				B35A05BD2438179300530C6E /* Main.storyboard in Resources */,
 			);
