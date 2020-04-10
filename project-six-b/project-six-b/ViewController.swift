@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let label1 = UILabel()
         label1.translatesAutoresizingMaskIntoConstraints = false
         label1.backgroundColor = UIColor.red
@@ -51,19 +52,19 @@ class ViewController: UIViewController {
         
         var previous: UILabel?
         
-        var labels = [label1, label2, label3, label4, label5]
+        let labels = [label1, label2, label3, label4, label5]
 
-        for label in labels {
-            label.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-            label.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-            label.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.2, constant: -10).isActive = true
+        for label1 in labels {
+            label1.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+            label1.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+            label1.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.2, constant: -10).isActive = true
 
             if let previous = previous {
-                label.topAnchor.constraint(equalTo: previous.bottomAnchor, constant: 10).isActive = true
+                label1.topAnchor.constraint(equalTo: previous.bottomAnchor, constant: 10).isActive = true
             } else {
-                label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
+                label1.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
             }
-            previous = label
+            previous = label1
             
         }
 
