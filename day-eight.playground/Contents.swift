@@ -10,6 +10,7 @@ struct Language {
             print("This version has been changed")
         }
     }
+    
     mutating func changeName() {
         name = "Object-c"
     }
@@ -42,5 +43,7 @@ var lang = Language(name: "Objective-C", version: 4.0)
 print(programming.count)
 programming.append(lang)
 programming.remove(at: 1)
+
+
 
 
