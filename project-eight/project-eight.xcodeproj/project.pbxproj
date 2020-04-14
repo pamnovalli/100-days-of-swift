@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3001AEE24453B6D00419FB6 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3001AED24453B6D00419FB6 /* level1.txt */; };
 		B316DB272443F33200AA8B0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316DB262443F33200AA8B0D /* AppDelegate.swift */; };
 		B316DB292443F33200AA8B0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316DB282443F33200AA8B0D /* SceneDelegate.swift */; };
 		B316DB2B2443F33200AA8B0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316DB2A2443F33200AA8B0D /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B3001AED24453B6D00419FB6 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = SOURCE_ROOT; };
 		B316DB232443F33200AA8B0D /* project-eight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-eight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B316DB262443F33200AA8B0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B316DB282443F33200AA8B0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				B316DB2F2443F33700AA8B0D /* Assets.xcassets */,
 				B316DB312443F33700AA8B0D /* LaunchScreen.storyboard */,
 				B316DB342443F33700AA8B0D /* Info.plist */,
+				B3001AED24453B6D00419FB6 /* level1.txt */,
 			);
 			path = "project-eight";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B316DB332443F33700AA8B0D /* LaunchScreen.storyboard in Resources */,
+				B3001AEE24453B6D00419FB6 /* level1.txt in Resources */,
 				B316DB302443F33700AA8B0D /* Assets.xcassets in Resources */,
 				B316DB2E2443F33200AA8B0D /* Main.storyboard in Resources */,
 			);
