@@ -68,6 +68,8 @@ class ViewController: UIViewController {
         view.addSubview(clear)
         
         let buttonsView = UIView()
+        buttonsView.layer.borderWidth = 5
+        buttonsView.layer.borderColor = UIColor.gray.cgColor
         buttonsView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(buttonsView)
         
@@ -165,6 +167,11 @@ class ViewController: UIViewController {
                 ac.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: levelUp))
                 present(ac, animated: true)
             }
+        } else {
+            let ac = UIAlertController(title: "It wasn't this time", message: "Oh no, it wasn't this time", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Try again", style: .default, handler: nil))
+            present(ac, animated: true)
+            score -= 1
         }
         
     }

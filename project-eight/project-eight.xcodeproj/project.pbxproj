@@ -16,6 +16,7 @@
 		B316DB332443F33700AA8B0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B316DB312443F33700AA8B0D /* LaunchScreen.storyboard */; };
 		B316DB3E2443F33700AA8B0D /* project_eightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316DB3D2443F33700AA8B0D /* project_eightTests.swift */; };
 		B316DB492443F33700AA8B0D /* project_eightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316DB482443F33700AA8B0D /* project_eightUITests.swift */; };
+		B39734D32446873B005E1AEF /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = B39734D22446873B005E1AEF /* level2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B316DB442443F33700AA8B0D /* project-eightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "project-eightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B316DB482443F33700AA8B0D /* project_eightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_eightUITests.swift; sourceTree = "<group>"; };
 		B316DB4A2443F33700AA8B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39734D22446873B005E1AEF /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				B316DB312443F33700AA8B0D /* LaunchScreen.storyboard */,
 				B316DB342443F33700AA8B0D /* Info.plist */,
 				B3001AED24453B6D00419FB6 /* level1.txt */,
+				B39734D22446873B005E1AEF /* level2.txt */,
 			);
 			path = "project-eight";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39734D32446873B005E1AEF /* level2.txt in Resources */,
 				B316DB332443F33700AA8B0D /* LaunchScreen.storyboard in Resources */,
 				B3001AEE24453B6D00419FB6 /* level1.txt in Resources */,
 				B316DB302443F33700AA8B0D /* Assets.xcassets in Resources */,
