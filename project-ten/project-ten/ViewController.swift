@@ -74,13 +74,14 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         ac.addTextField()
         
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-            
-            ac.addAction(UIAlertAction(title: "Ok", style: .default) { [weak self, weak ac] _ in
-                guard let newName = ac?.textFields?[0].text else { return }
-                person.name = newName
-            })
-        present(ac, animated: true)
         
+        ac.addAction(UIAlertAction(title: "Ok", style: .default) { [weak self, weak ac] _ in
+            guard let newName = ac?.textFields?[0].text else { return }
+            person.name = newName
+            collectionView.reloadData()
+        })
+        present(ac, animated: true)
+
     }
 }
 
