@@ -16,6 +16,7 @@
 		B3AA704B244BC7BA003EA957 /* project_tenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AA704A244BC7BA003EA957 /* project_tenTests.swift */; };
 		B3AA7056244BC7BA003EA957 /* project_tenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AA7055244BC7BA003EA957 /* project_tenUITests.swift */; };
 		B3AA7064244BD06F003EA957 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AA7063244BD06F003EA957 /* PersonCell.swift */; };
+		B3BAA3C7244D3B8100EEC025 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAA3C6244D3B8100EEC025 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B3AA7055244BC7BA003EA957 /* project_tenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_tenUITests.swift; sourceTree = "<group>"; };
 		B3AA7057244BC7BA003EA957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3AA7063244BD06F003EA957 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		B3BAA3C6244D3B8100EEC025 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				B3AA7033244BC7B5003EA957 /* AppDelegate.swift */,
 				B3AA7035244BC7B5003EA957 /* SceneDelegate.swift */,
 				B3AA7037244BC7B5003EA957 /* ViewController.swift */,
+				B3BAA3C6244D3B8100EEC025 /* Person.swift */,
 				B3AA7039244BC7B5003EA957 /* Main.storyboard */,
 				B3AA7063244BD06F003EA957 /* PersonCell.swift */,
 				B3AA703C244BC7BA003EA957 /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3BAA3C7244D3B8100EEC025 /* Person.swift in Sources */,
 				B3AA7038244BC7B5003EA957 /* ViewController.swift in Sources */,
 				B3AA7034244BC7B5003EA957 /* AppDelegate.swift in Sources */,
 				B3AA7064244BD06F003EA957 /* PersonCell.swift in Sources */,
