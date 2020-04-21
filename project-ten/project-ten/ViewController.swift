@@ -64,24 +64,29 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         cell.imageView.layer.borderWidth = 2
         cell.imageView.layer.cornerRadius = 3
         cell.layer.cornerRadius = 7
+        
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let person = people[indexPath.item]
         
-        let ac = UIAlertController(title: "Rename person", message: nil, preferredStyle: .alert)
-        ac.addTextField()
+        let alertC = UIAlertController(title: "Delete or Rename", message: nil, preferredStyle: .alert)
         
-        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        alertC.addTextField()
         
-        ac.addAction(UIAlertAction(title: "Ok", style: .default) { [weak self, weak ac] _ in
-            guard let newName = ac?.textFields?[0].text else { return }
+        alertC.addAction(UIAlertAction(title: "Delete", style: .default) { [weak self, weak alertC] _ in
+            self?.people.remove(at: indexPath.item)
+            collectionView.reloadData()
+        })
+        
+        alertC.addAction(UIAlertAction(title: "Rename", style: .default) { [weak self, weak alertC] _ in
+            guard let newName = alertC?.textFields?[0].text else { return }
             person.name = newName
             collectionView.reloadData()
         })
-        present(ac, animated: true)
-
+        present(alertC, animated: true)
     }
+    
 }
 
