@@ -5,7 +5,4 @@
 
 [100 days of Swift oficial site](https://www.hackingwithswift.com/100)
 
-<span style="color:blue">some **100 days of Swift oficial site** text</span>
-
-
-
+<font color='red'>**100 days of Swift oficial site** </font>
