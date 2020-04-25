@@ -9,7 +9,6 @@
 
 2 - Talk and share with others about your progress
 
-:--------- | :------
 
 [**Oficial site 100 days of Swift**](https://www.hackingwithswift.com/100)
 
