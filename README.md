@@ -12,18 +12,18 @@
 ### **Topics covered**
 
 Collections
-Loops
-Conditionals
-Protocols
-Extensions
-Opcionais
-Closures
-UIKit
-Auto Layout
-iOS Navigation
-Codable
-SpriteKit
-UserDefaults
+Loops <br>
+Conditionals <br>
+Protocols <br>
+Extensions <br>
+Opcionais <br>
+Closures <br>
+UIKit <br>
+Auto Layout <br>
+iOS Navigation <br>
+Codable <br>
+SpriteKit <br>
+UserDefaults <br>
 
 
 [**Oficial site 100 days of Swift**](https://www.hackingwithswift.com/100)
