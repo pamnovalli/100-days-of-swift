@@ -1,9 +1,9 @@
 # 100 days of swift 
 
-![Swift logo](Resources/logo.png) | 100 days of Swift is a marathon for learning Swift and the Apple platform in general created by Paul Hudson creator and writer of the Hacking with Swift blog.
+![Swift logo](Resources/logo.png) | 100 days of Swift is a marathon for learning Swift and the Apple platform in general created by Paul Hudson creator and writer of the Hacking with Swift blog. [**Oficial site 100 days of Swift**](https://www.hackingwithswift.com/100)
 :--------- | :------
 
- ## **The marathon consists of 2 premises:**
+ ## **The marathon premises:**
 
 1 - Read and practice Swift for at least 1 hour every day
 
@@ -26,7 +26,7 @@ SpriteKit <br>
 UserDefaults <br>
 
 
-[**Oficial site 100 days of Swift**](https://www.hackingwithswift.com/100)
+
 
 
 
