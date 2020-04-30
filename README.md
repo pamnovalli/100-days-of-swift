@@ -11,7 +11,7 @@
 
 ### **Topics covered**
 
-Collections
+Collections <br>
 Loops <br>
 Conditionals <br>
 Protocols <br>
@@ -24,6 +24,7 @@ iOS Navigation <br>
 Codable <br>
 SpriteKit <br>
 UserDefaults <br>
+Core Image <br>
 
 
 
