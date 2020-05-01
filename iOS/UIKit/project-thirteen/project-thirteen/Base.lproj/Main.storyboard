@@ -33,48 +33,76 @@
                                     <constraint firstAttribute="bottom" secondItem="WfX-qF-Zw2" secondAttribute="bottom" constant="21" id="sl9-Pl-mWS"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intensity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXU-Yv-31g">
-                                <rect key="frame" x="42" y="594" width="70" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uad-Oh-Ubq">
-                                <rect key="frame" x="118" y="589" width="118" height="31"/>
-                                <connections>
-                                    <action selector="intensityChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="5GA-29-wtw"/>
-                                </connections>
-                            </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKS-yg-Usj">
-                                <rect key="frame" x="73" y="638" width="89" height="30"/>
-                                <state key="normal" title="Change filter"/>
-                                <connections>
-                                    <action selector="changeFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M3O-RM-Hj3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HT-kr-Nxc">
-                                <rect key="frame" x="200" y="638" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Yg-bg-HPM"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="REZ-xR-4pD">
+                                <rect key="frame" x="26" y="561" width="362" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xyg-dL-hVr">
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intensity:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXU-Yv-31g">
+                                                <rect key="frame" x="0.0" y="0.0" width="85.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uad-Oh-Ubq">
+                                                <rect key="frame" x="88.5" y="0.0" width="89.5" height="31"/>
+                                                <connections>
+                                                    <action selector="intensityChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="5GA-29-wtw"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oT7-7M-C7a">
+                                        <rect key="frame" x="186" y="0.0" width="176" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rue-Q6-ghr">
+                                                <rect key="frame" x="0.0" y="0.0" width="85.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Ko-5L-1bu">
+                                                <rect key="frame" x="88.5" y="0.0" width="89.5" height="31"/>
+                                                <connections>
+                                                    <action selector="radioChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="lwu-H7-mzP"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aXp-0f-9lD">
+                                <rect key="frame" x="80" y="632" width="254" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKS-yg-Usj">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="30"/>
+                                        <state key="normal" title="Change filter"/>
+                                        <connections>
+                                            <action selector="changeFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M3O-RM-Hj3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HT-kr-Nxc">
+                                        <rect key="frame" x="129.5" y="0.0" width="124.5" height="30"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Yg-bg-HPM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="wKS-yg-Usj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5El-OZ-crg"/>
-                            <constraint firstItem="LXU-Yv-31g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="Auj-Sj-2PM"/>
-                            <constraint firstItem="LXU-Yv-31g" firstAttribute="centerY" secondItem="Uad-Oh-Ubq" secondAttribute="centerY" id="EMJ-QV-bBi"/>
-                            <constraint firstItem="wKS-yg-Usj" firstAttribute="top" secondItem="Uad-Oh-Ubq" secondAttribute="bottom" constant="19" id="MHX-HY-czd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uad-Oh-Ubq" secondAttribute="trailing" constant="180" id="PBd-dE-WMx"/>
-                            <constraint firstItem="Uad-Oh-Ubq" firstAttribute="top" secondItem="xD2-HL-3Z2" secondAttribute="bottom" constant="48" id="Wf4-fX-ijh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="REZ-xR-4pD" secondAttribute="trailing" constant="26" id="3rT-oL-8Bb"/>
+                            <constraint firstItem="REZ-xR-4pD" firstAttribute="top" secondItem="xD2-HL-3Z2" secondAttribute="bottom" constant="20" id="4xA-kS-Ps9"/>
+                            <constraint firstItem="aXp-0f-9lD" firstAttribute="top" secondItem="REZ-xR-4pD" secondAttribute="bottom" constant="41" id="Jef-WU-c5y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aXp-0f-9lD" secondAttribute="trailing" constant="80" id="Rg7-Mr-3yD"/>
                             <constraint firstItem="xD2-HL-3Z2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Y38-lb-tmB"/>
                             <constraint firstItem="xD2-HL-3Z2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a7e-Yv-vQK"/>
-                            <constraint firstItem="Uad-Oh-Ubq" firstAttribute="leading" secondItem="LXU-Yv-31g" secondAttribute="trailing" constant="8" symbolic="YES" id="hGs-Ro-0PF"/>
+                            <constraint firstItem="REZ-xR-4pD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="gtC-AY-eTX"/>
                             <constraint firstItem="xD2-HL-3Z2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hx1-gq-JZd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6HT-kr-Nxc" secondAttribute="trailing" constant="180" id="n7b-IR-vrX"/>
-                            <constraint firstItem="wKS-yg-Usj" firstAttribute="baseline" secondItem="6HT-kr-Nxc" secondAttribute="baseline" id="tbG-6u-DtX"/>
-                            <constraint firstItem="6HT-kr-Nxc" firstAttribute="leading" secondItem="wKS-yg-Usj" secondAttribute="trailing" constant="38" id="xK6-Ky-xWH"/>
+                            <constraint firstItem="aXp-0f-9lD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="jMQ-Ro-7cB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -82,6 +110,7 @@
                     <connections>
                         <outlet property="imageView" destination="WfX-qF-Zw2" id="Ra2-OL-aYa"/>
                         <outlet property="intensity" destination="Uad-Oh-Ubq" id="KOm-OU-2f3"/>
+                        <outlet property="radio" destination="2Ko-5L-1bu" id="YMV-ym-qky"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
