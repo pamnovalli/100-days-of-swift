@@ -42,6 +42,14 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonTapped(_ sender: Any) {
+        guard let flag = sender as? UIButton else { return }
+        
+        UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
+            flag.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        })
+        
+        flag.transform = .identity
+                
         var title: String
         count += 1
         
@@ -74,6 +82,7 @@ class ViewController: UIViewController {
             present(ac, animated: true)
             
         }
+        
     }
 }
 
