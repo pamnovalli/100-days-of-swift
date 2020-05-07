@@ -70,7 +70,6 @@ class ViewController: UIViewController {
             currentAnimation = 0
         }
     }
-    
-    
+
 }
 

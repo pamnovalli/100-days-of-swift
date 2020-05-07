@@ -235,7 +235,7 @@ class ViewController: UIViewController {
         performSelector(inBackground: #selector (loadLevel), with: nil)
         
         for btn in letterButtons {
-            btn.isHidden = false
+            btn.alpha = 0
         }
     }
     
