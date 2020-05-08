@@ -18,9 +18,12 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissModal))
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         guard let cityName = city else { return }
-        guard let url = URL(string: "https://en.wikipedia.org/wiki\(cityName)") else { return }
+        print(cityName)
+        guard let url = URL(string: "https://en.wikipedia.org/wiki/\(cityName)") else { return }
+        print(url)
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
     }
