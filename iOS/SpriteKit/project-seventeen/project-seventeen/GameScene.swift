@@ -99,7 +99,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         player.position = location
     }
-    
+
     func didBegin(_ contact: SKPhysicsContact) {
         if let explosion = SKEmitterNode(fileNamed: "explosion") {
             explosion.position = player.position
