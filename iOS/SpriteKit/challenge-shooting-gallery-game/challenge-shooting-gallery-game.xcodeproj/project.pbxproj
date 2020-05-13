@@ -7,27 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3BF0EDB2468D47500D121F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BF0EDA2468D47500D121F9 /* AppDelegate.swift */; };
-		B3BF0EDD2468D47500D121F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BF0EDC2468D47500D121F9 /* SceneDelegate.swift */; };
-		B3BF0EDF2468D47500D121F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BF0EDE2468D47500D121F9 /* ViewController.swift */; };
-		B3BF0EE22468D47500D121F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BF0EE02468D47500D121F9 /* Main.storyboard */; };
-		B3BF0EE42468D47900D121F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BF0EE32468D47900D121F9 /* Assets.xcassets */; };
-		B3BF0EE72468D47900D121F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BF0EE52468D47900D121F9 /* LaunchScreen.storyboard */; };
+		B3FC2A53246B9C1D007DD453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC2A52246B9C1D007DD453 /* AppDelegate.swift */; };
+		B3FC2A55246B9C1D007DD453 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B3FC2A54246B9C1D007DD453 /* GameScene.sks */; };
+		B3FC2A57246B9C1D007DD453 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B3FC2A56246B9C1D007DD453 /* Actions.sks */; };
+		B3FC2A59246B9C1D007DD453 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC2A58246B9C1D007DD453 /* GameScene.swift */; };
+		B3FC2A5B246B9C1D007DD453 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC2A5A246B9C1D007DD453 /* GameViewController.swift */; };
+		B3FC2A5E246B9C1D007DD453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FC2A5C246B9C1D007DD453 /* Main.storyboard */; };
+		B3FC2A60246B9C21007DD453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FC2A5F246B9C21007DD453 /* Assets.xcassets */; };
+		B3FC2A63246B9C21007DD453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FC2A61246B9C21007DD453 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B3BF0ED72468D47500D121F9 /* project-eighteen project-eighteen project-eighteen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-eighteen project-eighteen project-eighteen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3BF0EDA2468D47500D121F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3BF0EDC2468D47500D121F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B3BF0EDE2468D47500D121F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B3BF0EE12468D47500D121F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B3BF0EE32468D47900D121F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B3BF0EE62468D47900D121F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B3BF0EE82468D47900D121F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3FC2A4F246B9C1D007DD453 /* challenge-shooting-gallery-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "challenge-shooting-gallery-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3FC2A52246B9C1D007DD453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3FC2A54246B9C1D007DD453 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B3FC2A56246B9C1D007DD453 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		B3FC2A58246B9C1D007DD453 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B3FC2A5A246B9C1D007DD453 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B3FC2A5D246B9C1D007DD453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3FC2A5F246B9C21007DD453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3FC2A62246B9C21007DD453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3FC2A64246B9C21007DD453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B3BF0ED42468D47500D121F9 /* Frameworks */ = {
+		B3FC2A4C246B9C1D007DD453 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +41,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3BF0ECE2468D47500D121F9 = {
+		B3FC2A46246B9C1D007DD453 = {
 			isa = PBXGroup;
 			children = (
-				B3BF0ED92468D47500D121F9 /* project-eighteen project-eighteen project-eighteen */,
-				B3BF0ED82468D47500D121F9 /* Products */,
+				B3FC2A51246B9C1D007DD453 /* challenge-shooting-gallery-game */,
+				B3FC2A50246B9C1D007DD453 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B3BF0ED82468D47500D121F9 /* Products */ = {
+		B3FC2A50246B9C1D007DD453 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3BF0ED72468D47500D121F9 /* project-eighteen project-eighteen project-eighteen.app */,
+				B3FC2A4F246B9C1D007DD453 /* challenge-shooting-gallery-game.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B3BF0ED92468D47500D121F9 /* project-eighteen project-eighteen project-eighteen */ = {
+		B3FC2A51246B9C1D007DD453 /* challenge-shooting-gallery-game */ = {
 			isa = PBXGroup;
 			children = (
-				B3BF0EDA2468D47500D121F9 /* AppDelegate.swift */,
-				B3BF0EDC2468D47500D121F9 /* SceneDelegate.swift */,
-				B3BF0EDE2468D47500D121F9 /* ViewController.swift */,
-				B3BF0EE02468D47500D121F9 /* Main.storyboard */,
-				B3BF0EE32468D47900D121F9 /* Assets.xcassets */,
-				B3BF0EE52468D47900D121F9 /* LaunchScreen.storyboard */,
-				B3BF0EE82468D47900D121F9 /* Info.plist */,
+				B3FC2A52246B9C1D007DD453 /* AppDelegate.swift */,
+				B3FC2A54246B9C1D007DD453 /* GameScene.sks */,
+				B3FC2A56246B9C1D007DD453 /* Actions.sks */,
+				B3FC2A58246B9C1D007DD453 /* GameScene.swift */,
+				B3FC2A5A246B9C1D007DD453 /* GameViewController.swift */,
+				B3FC2A5C246B9C1D007DD453 /* Main.storyboard */,
+				B3FC2A5F246B9C21007DD453 /* Assets.xcassets */,
+				B3FC2A61246B9C21007DD453 /* LaunchScreen.storyboard */,
+				B3FC2A64246B9C21007DD453 /* Info.plist */,
 			);
-			path = "project-eighteen project-eighteen project-eighteen";
+			path = "challenge-shooting-gallery-game";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B3BF0ED62468D47500D121F9 /* project-eighteen project-eighteen project-eighteen */ = {
+		B3FC2A4E246B9C1D007DD453 /* challenge-shooting-gallery-game */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3BF0EEB2468D47A00D121F9 /* Build configuration list for PBXNativeTarget "project-eighteen project-eighteen project-eighteen" */;
+			buildConfigurationList = B3FC2A67246B9C21007DD453 /* Build configuration list for PBXNativeTarget "challenge-shooting-gallery-game" */;
 			buildPhases = (
-				B3BF0ED32468D47500D121F9 /* Sources */,
-				B3BF0ED42468D47500D121F9 /* Frameworks */,
-				B3BF0ED52468D47500D121F9 /* Resources */,
+				B3FC2A4B246B9C1D007DD453 /* Sources */,
+				B3FC2A4C246B9C1D007DD453 /* Frameworks */,
+				B3FC2A4D246B9C1D007DD453 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "project-eighteen project-eighteen project-eighteen";
-			productName = "project-eighteen project-eighteen project-eighteen";
-			productReference = B3BF0ED72468D47500D121F9 /* project-eighteen project-eighteen project-eighteen.app */;
+			name = "challenge-shooting-gallery-game";
+			productName = "challenge-shooting-gallery-game";
+			productReference = B3FC2A4F246B9C1D007DD453 /* challenge-shooting-gallery-game.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B3BF0ECF2468D47500D121F9 /* Project object */ = {
+		B3FC2A47246B9C1D007DD453 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Pamela Ianovalli";
 				TargetAttributes = {
-					B3BF0ED62468D47500D121F9 = {
+					B3FC2A4E246B9C1D007DD453 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = B3BF0ED22468D47500D121F9 /* Build configuration list for PBXProject "project-eighteen project-eighteen project-eighteen" */;
+			buildConfigurationList = B3FC2A4A246B9C1D007DD453 /* Build configuration list for PBXProject "challenge-shooting-gallery-game" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +116,57 @@
 				en,
 				Base,
 			);
-			mainGroup = B3BF0ECE2468D47500D121F9;
-			productRefGroup = B3BF0ED82468D47500D121F9 /* Products */;
+			mainGroup = B3FC2A46246B9C1D007DD453;
+			productRefGroup = B3FC2A50246B9C1D007DD453 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B3BF0ED62468D47500D121F9 /* project-eighteen project-eighteen project-eighteen */,
+				B3FC2A4E246B9C1D007DD453 /* challenge-shooting-gallery-game */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B3BF0ED52468D47500D121F9 /* Resources */ = {
+		B3FC2A4D246B9C1D007DD453 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3BF0EE72468D47900D121F9 /* LaunchScreen.storyboard in Resources */,
-				B3BF0EE42468D47900D121F9 /* Assets.xcassets in Resources */,
-				B3BF0EE22468D47500D121F9 /* Main.storyboard in Resources */,
+				B3FC2A5E246B9C1D007DD453 /* Main.storyboard in Resources */,
+				B3FC2A55246B9C1D007DD453 /* GameScene.sks in Resources */,
+				B3FC2A60246B9C21007DD453 /* Assets.xcassets in Resources */,
+				B3FC2A63246B9C21007DD453 /* LaunchScreen.storyboard in Resources */,
+				B3FC2A57246B9C1D007DD453 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B3BF0ED32468D47500D121F9 /* Sources */ = {
+		B3FC2A4B246B9C1D007DD453 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3BF0EDF2468D47500D121F9 /* ViewController.swift in Sources */,
-				B3BF0EDB2468D47500D121F9 /* AppDelegate.swift in Sources */,
-				B3BF0EDD2468D47500D121F9 /* SceneDelegate.swift in Sources */,
+				B3FC2A59246B9C1D007DD453 /* GameScene.swift in Sources */,
+				B3FC2A5B246B9C1D007DD453 /* GameViewController.swift in Sources */,
+				B3FC2A53246B9C1D007DD453 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B3BF0EE02468D47500D121F9 /* Main.storyboard */ = {
+		B3FC2A5C246B9C1D007DD453 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B3BF0EE12468D47500D121F9 /* Base */,
+				B3FC2A5D246B9C1D007DD453 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B3BF0EE52468D47900D121F9 /* LaunchScreen.storyboard */ = {
+		B3FC2A61246B9C21007DD453 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B3BF0EE62468D47900D121F9 /* Base */,
+				B3FC2A62246B9C21007DD453 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +174,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B3BF0EE92468D47A00D121F9 /* Debug */ = {
+		B3FC2A65246B9C21007DD453 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +234,7 @@
 			};
 			name = Debug;
 		};
-		B3BF0EEA2468D47A00D121F9 /* Release */ = {
+		B3FC2A66246B9C21007DD453 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,36 +288,36 @@
 			};
 			name = Release;
 		};
-		B3BF0EEC2468D47A00D121F9 /* Debug */ = {
+		B3FC2A68246B9C21007DD453 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X74VG8LAZG;
-				INFOPLIST_FILE = "project-eighteen project-eighteen project-eighteen/Info.plist";
+				INFOPLIST_FILE = "challenge-shooting-gallery-game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.project-eighteen-project-eighteen-project-eighteen";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.challenge-shooting-gallery-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B3BF0EED2468D47A00D121F9 /* Release */ = {
+		B3FC2A69246B9C21007DD453 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X74VG8LAZG;
-				INFOPLIST_FILE = "project-eighteen project-eighteen project-eighteen/Info.plist";
+				INFOPLIST_FILE = "challenge-shooting-gallery-game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.project-eighteen-project-eighteen-project-eighteen";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.challenge-shooting-gallery-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,25 +327,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B3BF0ED22468D47500D121F9 /* Build configuration list for PBXProject "project-eighteen project-eighteen project-eighteen" */ = {
+		B3FC2A4A246B9C1D007DD453 /* Build configuration list for PBXProject "challenge-shooting-gallery-game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3BF0EE92468D47A00D121F9 /* Debug */,
-				B3BF0EEA2468D47A00D121F9 /* Release */,
+				B3FC2A65246B9C21007DD453 /* Debug */,
+				B3FC2A66246B9C21007DD453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3BF0EEB2468D47A00D121F9 /* Build configuration list for PBXNativeTarget "project-eighteen project-eighteen project-eighteen" */ = {
+		B3FC2A67246B9C21007DD453 /* Build configuration list for PBXNativeTarget "challenge-shooting-gallery-game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3BF0EEC2468D47A00D121F9 /* Debug */,
-				B3BF0EED2468D47A00D121F9 /* Release */,
+				B3FC2A68246B9C21007DD453 /* Debug */,
+				B3FC2A69246B9C21007DD453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B3BF0ECF2468D47500D121F9 /* Project object */;
+	rootObject = B3FC2A47246B9C1D007DD453 /* Project object */;
 }
