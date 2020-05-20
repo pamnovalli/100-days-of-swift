@@ -25,10 +25,12 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
             
             switch response.actionIdentifier {
             case UNNotificationDefaultActionIdentifier:
-                print("Default identifier")
-                
+                let alert = UIAlertController(title: "Default identifier", message: nil, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+                present(alert, animated: true)
             case "show":
-                print("Show more information...")
+               let alert = UIAlertController(title: "Show more information...", message: nil, preferredStyle: .alert)
+               alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
             default:
                 break
             }
@@ -39,7 +41,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     
     @objc func registerLocal() {
         let center = UNUserNotificationCenter.current()
-        
+        center.delegate = self
         center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
             if granted {
                 print("Yay!")
