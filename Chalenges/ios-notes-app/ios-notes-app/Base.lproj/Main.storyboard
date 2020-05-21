@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N02-58-TdQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="axS-WH-C7n">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hj0-B7-GdG" customClass="DetailViewController" customModule="ios_notes_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jaE-Y2-MF9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="BRe-wm-aCM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MAk-Q5-Jeu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2350" y="175"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fhy-Hm-ZKI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N02-58-TdQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lrY-Xt-M8C">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AdP-BC-KaF" kind="relationship" relationship="rootViewController" id="FXi-sq-5fN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Tx-u1-5NK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613.04347826086962" y="174.77678571428569"/>
+        </scene>
+        <!--Notes List Table View Controller-->
+        <scene sceneID="6AC-lh-bV7">
+            <objects>
+                <viewController id="AdP-BC-KaF" customClass="NotesListTableViewController" customModule="ios_notes_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r7o-O0-EUg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6qp-Se-QYp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="672"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="h9l-LP-Be0">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h9l-LP-Be0" id="xLf-NS-rhf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gd-JV-3w4">
+                                <rect key="frame" x="285" y="786" width="121" height="30"/>
+                                <state key="normal" title="New Folder"/>
+                                <connections>
+                                    <action selector="addNewFolder:" destination="AdP-BC-KaF" eventType="touchUpInside" id="zXo-gE-3A6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6qp-Se-QYp" firstAttribute="trailing" secondItem="k1t-qp-9aX" secondAttribute="trailing" id="2dT-dx-yuL"/>
+                            <constraint firstItem="9gd-JV-3w4" firstAttribute="top" secondItem="6qp-Se-QYp" secondAttribute="bottom" constant="26" id="B7J-kM-oxh"/>
+                            <constraint firstItem="k1t-qp-9aX" firstAttribute="bottom" secondItem="9gd-JV-3w4" secondAttribute="bottom" constant="46" id="N6c-Wb-MML"/>
+                            <constraint firstItem="9gd-JV-3w4" firstAttribute="leading" secondItem="k1t-qp-9aX" secondAttribute="leading" constant="285" id="O0i-w8-HcA"/>
+                            <constraint firstItem="6qp-Se-QYp" firstAttribute="leading" secondItem="k1t-qp-9aX" secondAttribute="leading" id="Ogz-De-kiq"/>
+                            <constraint firstItem="k1t-qp-9aX" firstAttribute="trailing" secondItem="9gd-JV-3w4" secondAttribute="trailing" constant="8" id="kuT-9K-qOJ"/>
+                            <constraint firstItem="6qp-Se-QYp" firstAttribute="top" secondItem="k1t-qp-9aX" secondAttribute="top" id="qkW-vq-OKK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k1t-qp-9aX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9GB-VO-wEa"/>
+                    <connections>
+                        <outlet property="btnNewFolder" destination="9gd-JV-3w4" id="XPf-rn-fh4"/>
+                        <outlet property="tableView" destination="6qp-Se-QYp" id="qao-b3-8Jg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kk8-Tz-rPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418.840579710145" y="180.80357142857142"/>
+        </scene>
+    </scenes>
+</document>
