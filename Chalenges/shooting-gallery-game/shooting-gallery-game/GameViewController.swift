@@ -1,8 +1,8 @@
 //
 //  GameViewController.swift
-//  challenge-shooting-gallery-game
+//  shooting-gallery-game
 //
-//  Created by Pamela Ianovalli on 13/05/20.
+//  Created by Pamela Ianovalli on 21/05/20.
 //  Copyright © 2020 Pamela Ianovalli. All rights reserved.
 //
 

@@ -7,31 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3FC2A53246B9C1D007DD453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC2A52246B9C1D007DD453 /* AppDelegate.swift */; };
-		B3FC2A55246B9C1D007DD453 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B3FC2A54246B9C1D007DD453 /* GameScene.sks */; };
-		B3FC2A57246B9C1D007DD453 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B3FC2A56246B9C1D007DD453 /* Actions.sks */; };
-		B3FC2A59246B9C1D007DD453 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC2A58246B9C1D007DD453 /* GameScene.swift */; };
-		B3FC2A5B246B9C1D007DD453 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC2A5A246B9C1D007DD453 /* GameViewController.swift */; };
-		B3FC2A5E246B9C1D007DD453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FC2A5C246B9C1D007DD453 /* Main.storyboard */; };
-		B3FC2A60246B9C21007DD453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FC2A5F246B9C21007DD453 /* Assets.xcassets */; };
-		B3FC2A63246B9C21007DD453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FC2A61246B9C21007DD453 /* LaunchScreen.storyboard */; };
+		B37A65EE2476FF0F006B402A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37A65ED2476FF0F006B402A /* AppDelegate.swift */; };
+		B37A65F02476FF0F006B402A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B37A65EF2476FF0F006B402A /* GameScene.sks */; };
+		B37A65F22476FF0F006B402A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B37A65F12476FF0F006B402A /* Actions.sks */; };
+		B37A65F42476FF0F006B402A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37A65F32476FF0F006B402A /* GameScene.swift */; };
+		B37A65F62476FF0F006B402A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37A65F52476FF0F006B402A /* GameViewController.swift */; };
+		B37A65F92476FF0F006B402A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37A65F72476FF0F006B402A /* Main.storyboard */; };
+		B37A65FB2476FF11006B402A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37A65FA2476FF11006B402A /* Assets.xcassets */; };
+		B37A65FE2476FF11006B402A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37A65FC2476FF11006B402A /* LaunchScreen.storyboard */; };
+		B37A661624770B6A006B402A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A661424770B6A006B402A /* background.png */; };
+		B37A661724770B6A006B402A /* ballon.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A661524770B6A006B402A /* ballon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B3FC2A4F246B9C1D007DD453 /* challenge-shooting-gallery-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "challenge-shooting-gallery-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3FC2A52246B9C1D007DD453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3FC2A54246B9C1D007DD453 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		B3FC2A56246B9C1D007DD453 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		B3FC2A58246B9C1D007DD453 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		B3FC2A5A246B9C1D007DD453 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		B3FC2A5D246B9C1D007DD453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B3FC2A5F246B9C21007DD453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B3FC2A62246B9C21007DD453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B3FC2A64246B9C21007DD453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37A65EA2476FF0F006B402A /* shooting-gallery-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shooting-gallery-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37A65ED2476FF0F006B402A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B37A65EF2476FF0F006B402A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B37A65F12476FF0F006B402A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		B37A65F32476FF0F006B402A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B37A65F52476FF0F006B402A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B37A65F82476FF0F006B402A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B37A65FA2476FF11006B402A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B37A65FD2476FF11006B402A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B37A65FF2476FF11006B402A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37A661424770B6A006B402A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		B37A661524770B6A006B402A /* ballon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B3FC2A4C246B9C1D007DD453 /* Frameworks */ = {
+		B37A65E72476FF0F006B402A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,74 +45,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3FC2A46246B9C1D007DD453 = {
+		B37A65E12476FF0F006B402A = {
 			isa = PBXGroup;
 			children = (
-				B3FC2A51246B9C1D007DD453 /* challenge-shooting-gallery-game */,
-				B3FC2A50246B9C1D007DD453 /* Products */,
+				B37A65EC2476FF0F006B402A /* shooting-gallery-game */,
+				B37A65EB2476FF0F006B402A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B3FC2A50246B9C1D007DD453 /* Products */ = {
+		B37A65EB2476FF0F006B402A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3FC2A4F246B9C1D007DD453 /* challenge-shooting-gallery-game.app */,
+				B37A65EA2476FF0F006B402A /* shooting-gallery-game.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B3FC2A51246B9C1D007DD453 /* challenge-shooting-gallery-game */ = {
+		B37A65EC2476FF0F006B402A /* shooting-gallery-game */ = {
 			isa = PBXGroup;
 			children = (
-				B3FC2A52246B9C1D007DD453 /* AppDelegate.swift */,
-				B3FC2A54246B9C1D007DD453 /* GameScene.sks */,
-				B3FC2A56246B9C1D007DD453 /* Actions.sks */,
-				B3FC2A58246B9C1D007DD453 /* GameScene.swift */,
-				B3FC2A5A246B9C1D007DD453 /* GameViewController.swift */,
-				B3FC2A5C246B9C1D007DD453 /* Main.storyboard */,
-				B3FC2A5F246B9C21007DD453 /* Assets.xcassets */,
-				B3FC2A61246B9C21007DD453 /* LaunchScreen.storyboard */,
-				B3FC2A64246B9C21007DD453 /* Info.plist */,
+				B37A65ED2476FF0F006B402A /* AppDelegate.swift */,
+				B37A65EF2476FF0F006B402A /* GameScene.sks */,
+				B37A65F12476FF0F006B402A /* Actions.sks */,
+				B37A65F32476FF0F006B402A /* GameScene.swift */,
+				B37A65F52476FF0F006B402A /* GameViewController.swift */,
+				B37A65F72476FF0F006B402A /* Main.storyboard */,
+				B37A65FA2476FF11006B402A /* Assets.xcassets */,
+				B37A65FC2476FF11006B402A /* LaunchScreen.storyboard */,
+				B37A65FF2476FF11006B402A /* Info.plist */,
+				B37A66072477016D006B402A /* Content */,
 			);
-			path = "challenge-shooting-gallery-game";
+			path = "shooting-gallery-game";
+			sourceTree = "<group>";
+		};
+		B37A66072477016D006B402A /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				B37A661424770B6A006B402A /* background.png */,
+				B37A661524770B6A006B402A /* ballon.png */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B3FC2A4E246B9C1D007DD453 /* challenge-shooting-gallery-game */ = {
+		B37A65E92476FF0F006B402A /* shooting-gallery-game */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3FC2A67246B9C21007DD453 /* Build configuration list for PBXNativeTarget "challenge-shooting-gallery-game" */;
+			buildConfigurationList = B37A66022476FF11006B402A /* Build configuration list for PBXNativeTarget "shooting-gallery-game" */;
 			buildPhases = (
-				B3FC2A4B246B9C1D007DD453 /* Sources */,
-				B3FC2A4C246B9C1D007DD453 /* Frameworks */,
-				B3FC2A4D246B9C1D007DD453 /* Resources */,
+				B37A65E62476FF0F006B402A /* Sources */,
+				B37A65E72476FF0F006B402A /* Frameworks */,
+				B37A65E82476FF0F006B402A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "challenge-shooting-gallery-game";
-			productName = "challenge-shooting-gallery-game";
-			productReference = B3FC2A4F246B9C1D007DD453 /* challenge-shooting-gallery-game.app */;
+			name = "shooting-gallery-game";
+			productName = "shooting-gallery-game";
+			productReference = B37A65EA2476FF0F006B402A /* shooting-gallery-game.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B3FC2A47246B9C1D007DD453 /* Project object */ = {
+		B37A65E22476FF0F006B402A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Pamela Ianovalli";
 				TargetAttributes = {
-					B3FC2A4E246B9C1D007DD453 = {
+					B37A65E92476FF0F006B402A = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = B3FC2A4A246B9C1D007DD453 /* Build configuration list for PBXProject "challenge-shooting-gallery-game" */;
+			buildConfigurationList = B37A65E52476FF0F006B402A /* Build configuration list for PBXProject "shooting-gallery-game" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,57 +130,59 @@
 				en,
 				Base,
 			);
-			mainGroup = B3FC2A46246B9C1D007DD453;
-			productRefGroup = B3FC2A50246B9C1D007DD453 /* Products */;
+			mainGroup = B37A65E12476FF0F006B402A;
+			productRefGroup = B37A65EB2476FF0F006B402A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B3FC2A4E246B9C1D007DD453 /* challenge-shooting-gallery-game */,
+				B37A65E92476FF0F006B402A /* shooting-gallery-game */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B3FC2A4D246B9C1D007DD453 /* Resources */ = {
+		B37A65E82476FF0F006B402A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3FC2A5E246B9C1D007DD453 /* Main.storyboard in Resources */,
-				B3FC2A55246B9C1D007DD453 /* GameScene.sks in Resources */,
-				B3FC2A60246B9C21007DD453 /* Assets.xcassets in Resources */,
-				B3FC2A63246B9C21007DD453 /* LaunchScreen.storyboard in Resources */,
-				B3FC2A57246B9C1D007DD453 /* Actions.sks in Resources */,
+				B37A65F92476FF0F006B402A /* Main.storyboard in Resources */,
+				B37A661624770B6A006B402A /* background.png in Resources */,
+				B37A65F02476FF0F006B402A /* GameScene.sks in Resources */,
+				B37A65FB2476FF11006B402A /* Assets.xcassets in Resources */,
+				B37A661724770B6A006B402A /* ballon.png in Resources */,
+				B37A65FE2476FF11006B402A /* LaunchScreen.storyboard in Resources */,
+				B37A65F22476FF0F006B402A /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B3FC2A4B246B9C1D007DD453 /* Sources */ = {
+		B37A65E62476FF0F006B402A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3FC2A59246B9C1D007DD453 /* GameScene.swift in Sources */,
-				B3FC2A5B246B9C1D007DD453 /* GameViewController.swift in Sources */,
-				B3FC2A53246B9C1D007DD453 /* AppDelegate.swift in Sources */,
+				B37A65F42476FF0F006B402A /* GameScene.swift in Sources */,
+				B37A65F62476FF0F006B402A /* GameViewController.swift in Sources */,
+				B37A65EE2476FF0F006B402A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B3FC2A5C246B9C1D007DD453 /* Main.storyboard */ = {
+		B37A65F72476FF0F006B402A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B3FC2A5D246B9C1D007DD453 /* Base */,
+				B37A65F82476FF0F006B402A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B3FC2A61246B9C21007DD453 /* LaunchScreen.storyboard */ = {
+		B37A65FC2476FF11006B402A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B3FC2A62246B9C21007DD453 /* Base */,
+				B37A65FD2476FF11006B402A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,7 +190,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B3FC2A65246B9C21007DD453 /* Debug */ = {
+		B37A66002476FF11006B402A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +250,7 @@
 			};
 			name = Debug;
 		};
-		B3FC2A66246B9C21007DD453 /* Release */ = {
+		B37A66012476FF11006B402A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -288,64 +304,64 @@
 			};
 			name = Release;
 		};
-		B3FC2A68246B9C21007DD453 /* Debug */ = {
+		B37A66032476FF11006B402A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X74VG8LAZG;
-				INFOPLIST_FILE = "challenge-shooting-gallery-game/Info.plist";
+				INFOPLIST_FILE = "shooting-gallery-game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.challenge-shooting-gallery-game";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.shooting-gallery-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
-		B3FC2A69246B9C21007DD453 /* Release */ = {
+		B37A66042476FF11006B402A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X74VG8LAZG;
-				INFOPLIST_FILE = "challenge-shooting-gallery-game/Info.plist";
+				INFOPLIST_FILE = "shooting-gallery-game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.challenge-shooting-gallery-game";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.shooting-gallery-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B3FC2A4A246B9C1D007DD453 /* Build configuration list for PBXProject "challenge-shooting-gallery-game" */ = {
+		B37A65E52476FF0F006B402A /* Build configuration list for PBXProject "shooting-gallery-game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3FC2A65246B9C21007DD453 /* Debug */,
-				B3FC2A66246B9C21007DD453 /* Release */,
+				B37A66002476FF11006B402A /* Debug */,
+				B37A66012476FF11006B402A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3FC2A67246B9C21007DD453 /* Build configuration list for PBXNativeTarget "challenge-shooting-gallery-game" */ = {
+		B37A66022476FF11006B402A /* Build configuration list for PBXNativeTarget "shooting-gallery-game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3FC2A68246B9C21007DD453 /* Debug */,
-				B3FC2A69246B9C21007DD453 /* Release */,
+				B37A66032476FF11006B402A /* Debug */,
+				B37A66042476FF11006B402A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B3FC2A47246B9C1D007DD453 /* Project object */;
+	rootObject = B37A65E22476FF0F006B402A /* Project object */;
 }
