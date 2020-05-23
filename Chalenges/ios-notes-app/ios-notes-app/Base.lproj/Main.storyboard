@@ -14,13 +14,29 @@
                     <view key="view" contentMode="scaleToFill" id="jaE-Y2-MF9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KvE-tr-GlW">
+                                <rect key="frame" x="198" y="518.5" width="62" height="46"/>
+                                <color key="tintColor" red="0.97675544020000005" green="0.79466252562199768" blue="0.17300579426439402" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BRe-wm-aCM" firstAttribute="bottom" secondItem="KvE-tr-GlW" secondAttribute="bottom" constant="296" id="Awi-zT-zd2"/>
+                            <constraint firstItem="KvE-tr-GlW" firstAttribute="leading" secondItem="BRe-wm-aCM" secondAttribute="leading" constant="198" id="grc-Kw-vAx"/>
+                            <constraint firstItem="KvE-tr-GlW" firstAttribute="top" secondItem="BRe-wm-aCM" secondAttribute="top" constant="475" id="kJY-3n-IqL"/>
+                            <constraint firstItem="BRe-wm-aCM" firstAttribute="trailing" secondItem="KvE-tr-GlW" secondAttribute="trailing" constant="154" id="lsM-pY-zxU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BRe-wm-aCM"/>
                     </view>
+                    <connections>
+                        <outlet property="addNotes" destination="KvE-tr-GlW" id="UOl-Yu-KWR"/>
+                        <outlet property="imgText" destination="KvE-tr-GlW" id="xRv-St-hY9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAk-Q5-Jeu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2350" y="175"/>
+            <point key="canvasLocation" x="2349.275362318841" y="174.77678571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fhy-Hm-ZKI">
@@ -52,12 +68,25 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="672"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="h9l-LP-Be0">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="55" id="h9l-LP-Be0">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h9l-LP-Be0" id="xLf-NS-rhf">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lPR-hs-4lT">
+                                                    <rect key="frame" x="20" y="19.5" width="23.5" height="19"/>
+                                                    <color key="tintColor" red="0.97675544020000005" green="0.79466252559999995" blue="0.17300579429999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="23.5" id="4FZ-cx-ww8"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lPR-hs-4lT" firstAttribute="leading" secondItem="xLf-NS-rhf" secondAttribute="leading" constant="20" id="Bmk-z1-nZv"/>
+                                                <constraint firstItem="lPR-hs-4lT" firstAttribute="top" secondItem="xLf-NS-rhf" secondAttribute="top" constant="20" symbolic="YES" id="qkJ-Gy-Yym"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -93,4 +122,7 @@
             <point key="canvasLocation" x="1418.840579710145" y="180.80357142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
+    </resources>
 </document>

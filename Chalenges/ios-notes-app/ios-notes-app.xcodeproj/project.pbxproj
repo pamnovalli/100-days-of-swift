@@ -14,6 +14,7 @@
 		B39515E0247605E5008E463A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39515DF247605E5008E463A /* Assets.xcassets */; };
 		B39515E3247605E5008E463A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39515E1247605E5008E463A /* LaunchScreen.storyboard */; };
 		B39515EB247606D7008E463A /* NotesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39515EA247606D7008E463A /* NotesListTableViewController.swift */; };
+		B3ABAB492478A71100811592 /* NotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ABAB482478A71100811592 /* NotesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B39515E2247605E5008E463A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B39515E4247605E5008E463A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B39515EA247606D7008E463A /* NotesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListTableViewController.swift; sourceTree = "<group>"; };
+		B3ABAB482478A71100811592 /* NotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				B39515E1247605E5008E463A /* LaunchScreen.storyboard */,
 				B39515E4247605E5008E463A /* Info.plist */,
 				B39515EA247606D7008E463A /* NotesListTableViewController.swift */,
+				B3ABAB482478A71100811592 /* NotesModel.swift */,
 			);
 			path = "ios-notes-app";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				B39515EB247606D7008E463A /* NotesListTableViewController.swift in Sources */,
 				B39515D7247605E0008E463A /* AppDelegate.swift in Sources */,
 				B39515D9247605E0008E463A /* SceneDelegate.swift in Sources */,
+				B3ABAB492478A71100811592 /* NotesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

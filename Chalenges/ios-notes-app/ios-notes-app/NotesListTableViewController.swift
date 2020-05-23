@@ -12,18 +12,28 @@ class NotesListTableViewController: UIViewController, UITableViewDelegate, UITab
     @IBOutlet weak var btnNewFolder: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
-    private var notes = [String]()
+    private var notes = [NotesModel]()
     var defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        notes = defaults.array(forKey: "notes") as? [String] ?? [""]
+        if let notesBackup = defaults.object(forKey: "notes") as? Data {
+            if let decodedNotes = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(notesBackup) as? [NotesModel] {
+                notes = decodedNotes
+            }
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        defaults.set(notes, forKey: "notes")
+        save()
+    }
+    
+    func save() {
+        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: notes, requiringSecureCoding: false) {
+            defaults.set(savedData, forKey: "notes")
+        }
     }
 
     // MARK: - Table view data source
@@ -34,7 +44,8 @@ class NotesListTableViewController: UIViewController, UITableViewDelegate, UITab
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = notes[indexPath.row]
+        cell.textLabel?.text = notes[indexPath.row].name
+        cell.imageView?.image = UIImage.init(systemName: "folder")
         return cell
     }
     
@@ -52,7 +63,8 @@ class NotesListTableViewController: UIViewController, UITableViewDelegate, UITab
         alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { [weak self] (action)  in
             guard let textField = alert.textFields?.first, let text = textField.text else { return }
-            self?.notes.append(text)
+            let notes = NotesModel.init(name: text, text: "")
+            self?.notes.append(notes)
             self?.tableView.reloadData()
         }))
         present(alert, animated: true)
