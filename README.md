@@ -26,6 +26,8 @@ SpriteKit <br>
 UserDefaults <br>
 Core Image <br>
 Mapkit <br>
+iBeacons <br>
+Core Location <br>
 
 
 
