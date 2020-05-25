@@ -83,6 +83,15 @@ class GameScene: SKScene {
                 nextSequenceQueued = true
             }
         }
+        
+        if lives == 0 {
+            let gameOver = SKSpriteNode(imageNamed: "gameOver")
+            gameOver.position = CGPoint(x: 521, y: 384)
+//            gameOver.blendMode = .replace
+            gameOver.size = CGSize.init(width: 400, height: 400)
+//            gameOver.zPosition = 1
+            addChild(gameOver)
+        }
     }
     
     func subtractLife() {
