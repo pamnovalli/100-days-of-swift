@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     func withPrefix(prefix: String) -> String {
@@ -21,9 +22,9 @@ extension String {
 extension String {
     var isNumeric: Bool {
         let decimalCharacters = CharacterSet.decimalDigits
-
+        
         let decimalRange = self.rangeOfCharacter(from: decimalCharacters)
-
+        
         if decimalRange != nil {
             return true
         }
@@ -46,3 +47,30 @@ extension String {
         return stringArray
     }
 }
+
+extension Int {
+    func times(_ closure: () -> Void) {
+        guard self > 0  else { return print("Enter a positive number")}
+        
+        for _ in 0 ..< self {
+            closure()
+        }
+    }
+}
+
+extension Array where Element: Comparable {
+    mutating func remove(item: Element) {
+        if let location = self.firstIndex(of: item) {
+            self.remove(at: location)
+        }
+    }
+}
+
+extension UIView {
+    func bounceOut(duration: TimeInterval) {
+        UIView.animate(withDuration: duration) {
+            self.transform = CGAffineTransform(scaleX: 0.0001, y: 0.0001)
+        }
+    }
+}
+

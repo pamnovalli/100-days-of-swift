@@ -28,6 +28,16 @@ class ViewController: UIViewController {
         let stringLines =  "this\nis\na\ntest"
         let stringArray = stringLines.lines
         print(stringArray)
+        
+        let number = -3
+        number.times { print("Hello") }
+        
+        var arrayNumbers = [1, 2, 1, 3, 1, 4, 2, 1]
+        arrayNumbers.remove(item: 1)
+        print(arrayNumbers)
+        
+        let view = UIView()
+        view.bounceOut(duration: 3)
     }
 }
 
