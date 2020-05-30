@@ -15,7 +15,7 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
     var peerId = MCPeerID(displayName: UIDevice.current.name)
     var mcSession: MCSession?
     var mcAdvertiserAssistant: MCAdvertiserAssistant?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Selfie Share"
@@ -31,7 +31,7 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageView", for: indexPath)
         
@@ -91,7 +91,7 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         mcBrowser.delegate = self
         present(mcBrowser, animated: true)
     }
-
+    
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
         
@@ -111,10 +111,10 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
             print("Connected: \(peerID.displayName)")
         case .connecting:
             print("Connecting: \(peerID.displayName)")
-
+            
         case .notConnected:
             print("Not Connected: \(peerID.displayName)")
-
+            
         @unknown default:
             print("Unknown state received: \(peerID.displayName)")
         }
@@ -138,6 +138,4 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
             }
         }
     }
-    
-    
 }
