@@ -21,6 +21,7 @@ Closures <br>
 UIKit <br>
 Auto Layout <br>
 iOS Navigation <br>
+Core Animation <br>
 Codable <br>
 SpriteKit <br>
 UserDefaults <br>
@@ -28,6 +29,8 @@ Core Image <br>
 Mapkit <br>
 iBeacons <br>
 Core Location <br>
+Core Motion <br>
+Core Graphics <br>
 
 
 
