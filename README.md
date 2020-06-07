@@ -31,7 +31,9 @@ iBeacons <br>
 Core Location <br>
 Core Motion <br>
 Core Graphics <br>
-
+Keychain <br>
+Touch ID <br>
+Face ID <br>
 
 
 
