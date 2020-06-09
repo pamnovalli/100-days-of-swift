@@ -10,8 +10,8 @@ import UIKit
 import LocalAuthentication
 
 class ViewController: UIViewController {
-    
     @IBOutlet weak var secret: UITextView!
+    let password = "pam"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,25 @@ class ViewController: UIViewController {
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
         notificationCenter.addObserver(self, selector: #selector(saveSecretMessage), name: UIApplication.willResignActiveNotification, object: nil)
+        
     }
+    
+    func authenticatePassword() {
+        let alert = UIAlertController(title: "Authenticate", message: "Type your password", preferredStyle: .alert)
+        
+        alert.addTextField()
+        
+        alert.addAction(UIAlertAction(title: "Login", style: .default, handler: { [weak self, weak alert] _ in
+            guard let answer = alert?.textFields?[0].text else {return}
+            if answer == self?.password {
+                self?.unlockSecretMessage()
+            }
+            print(answer)
+        }))
+        
+        present(alert, animated: true)
+    }
+    
     
     @objc func adjustForKeyboard(notification: Notification) {
         guard let keyboardValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
@@ -55,7 +73,7 @@ class ViewController: UIViewController {
                 
                 DispatchQueue.main.async {
                     if success {
-                        self?.unlockSecretMessage()
+                        self?.authenticatePassword()
                     } else {
                         let ac = UIAlertController(title: "Authentication failed", message: "You could not be verified; please try again.", preferredStyle: .alert)
                         ac.addAction(UIAlertAction(title: "ok", style: .default))
