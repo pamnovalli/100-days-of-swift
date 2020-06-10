@@ -48,7 +48,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
             guard let capital = view.annotation as? Capital else { return }
-            
+
             if let navigation = storyboard?.instantiateViewController(withIdentifier: "NavigationDetail") as? UINavigationController {
                 let viewController = navigation.viewControllers.first as? DetailViewController
                 viewController?.city = capital.title
