@@ -16,6 +16,8 @@
 		B34DE2B1249051AA00282DE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34DE2B0249051AA00282DE9 /* Assets.xcassets */; };
 		B34DE2B4249051AA00282DE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34DE2B2249051AA00282DE9 /* LaunchScreen.storyboard */; };
 		B34DE2BC2490530C00282DE9 /* BuildingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DE2BB2490530C00282DE9 /* BuildingNode.swift */; };
+		B3B7F4942491C56100766AB1 /* hitBuilding.sks in Resources */ = {isa = PBXBuildFile; fileRef = B3B7F4922491C56100766AB1 /* hitBuilding.sks */; };
+		B3B7F4952491C56100766AB1 /* hitPlayer.sks in Resources */ = {isa = PBXBuildFile; fileRef = B3B7F4932491C56100766AB1 /* hitPlayer.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B34DE2B3249051AA00282DE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B34DE2B5249051AA00282DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B34DE2BB2490530C00282DE9 /* BuildingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingNode.swift; sourceTree = "<group>"; };
+		B3B7F4922491C56100766AB1 /* hitBuilding.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitBuilding.sks; sourceTree = "<group>"; };
+		B3B7F4932491C56100766AB1 /* hitPlayer.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitPlayer.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				B34DE2B0249051AA00282DE9 /* Assets.xcassets */,
 				B34DE2B2249051AA00282DE9 /* LaunchScreen.storyboard */,
 				B34DE2B5249051AA00282DE9 /* Info.plist */,
+				B3B7F4922491C56100766AB1 /* hitBuilding.sks */,
+				B3B7F4932491C56100766AB1 /* hitPlayer.sks */,
 			);
 			path = "project-twentyNine";
 			sourceTree = "<group>";
@@ -134,11 +140,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B7F4952491C56100766AB1 /* hitPlayer.sks in Resources */,
 				B34DE2AF249051A600282DE9 /* Main.storyboard in Resources */,
 				B34DE2A6249051A600282DE9 /* GameScene.sks in Resources */,
 				B34DE2B1249051AA00282DE9 /* Assets.xcassets in Resources */,
 				B34DE2B4249051AA00282DE9 /* LaunchScreen.storyboard in Resources */,
 				B34DE2A8249051A600282DE9 /* Actions.sks in Resources */,
+				B3B7F4942491C56100766AB1 /* hitBuilding.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
