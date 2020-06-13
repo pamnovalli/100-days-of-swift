@@ -65,20 +65,39 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEX-zg-DVX">
+                                <rect key="frame" x="20" y="70" width="82" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00x-ud-f8D">
+                                <rect key="frame" x="793" y="75" width="82" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="kEX-zg-DVX" firstAttribute="top" secondItem="e6i-BV-ega" secondAttribute="bottom" constant="20" id="0P9-P3-aXw"/>
                             <constraint firstItem="41H-8G-5Ov" firstAttribute="leading" secondItem="kp2-0R-R0C" secondAttribute="trailing" constant="60" id="0Pq-v5-5C9"/>
+                            <constraint firstItem="kEX-zg-DVX" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="20" id="113-fe-g3P"/>
+                            <constraint firstItem="00x-ud-f8D" firstAttribute="top" secondItem="kp2-0R-R0C" secondAttribute="bottom" constant="30" id="5Q9-hF-hgh"/>
                             <constraint firstItem="vhC-ZO-QLz" firstAttribute="leading" secondItem="roC-Wq-is1" secondAttribute="trailing" constant="80" id="7G9-zo-iWL"/>
                             <constraint firstItem="kp2-0R-R0C" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="24" id="7mL-dx-25e"/>
                             <constraint firstItem="41H-8G-5Ov" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="24" id="C83-Hd-1l7"/>
                             <constraint firstItem="roC-Wq-is1" firstAttribute="leading" secondItem="e6i-BV-ega" secondAttribute="trailing" constant="40" id="Cmv-de-IDc"/>
                             <constraint firstItem="9bh-ca-gLU" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="topMargin" constant="64" id="DUj-44-fcM"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="9bh-ca-gLU" secondAttribute="trailing" constant="369" id="EtA-Wu-NU9"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kEX-zg-DVX" secondAttribute="trailing" symbolic="YES" id="Lcq-CK-3u1"/>
                             <constraint firstItem="e6i-BV-ega" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="22" id="QIS-ah-bSv"/>
                             <constraint firstItem="vhC-ZO-QLz" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="24" id="SXW-jb-ggm"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="00x-ud-f8D" secondAttribute="trailing" constant="149" id="Ttu-PC-fWv"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="41H-8G-5Ov" secondAttribute="trailing" constant="8" id="ZwY-g5-MlB"/>
                             <constraint firstItem="kp2-0R-R0C" firstAttribute="leading" secondItem="vhC-ZO-QLz" secondAttribute="trailing" constant="26" id="cBW-nu-VXP"/>
-                            <constraint firstItem="9bh-ca-gLU" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="370" id="le9-jE-cOe"/>
+                            <constraint firstItem="00x-ud-f8D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9bh-ca-gLU" secondAttribute="trailing" constant="8" symbolic="YES" id="gey-eT-x1P"/>
+                            <constraint firstItem="9bh-ca-gLU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4qk-I5-YsI" secondAttribute="leading" id="le9-jE-cOe"/>
                             <constraint firstItem="e6i-BV-ega" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="20" id="rfN-e3-WeH"/>
                             <constraint firstItem="roC-Wq-is1" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="24" id="tE9-Pp-wJi"/>
                         </constraints>
@@ -89,13 +108,15 @@
                         <outlet property="angleSlider" destination="e6i-BV-ega" id="Rch-1Q-xqg"/>
                         <outlet property="launchButton" destination="41H-8G-5Ov" id="d1A-fV-RdK"/>
                         <outlet property="playerNumber" destination="9bh-ca-gLU" id="YNm-q8-Pbn"/>
+                        <outlet property="scorePlayerOne" destination="kEX-zg-DVX" id="hyN-C2-38I"/>
+                        <outlet property="scorePlayerTwo" destination="00x-ud-f8D" id="XFU-QZ-vvn"/>
                         <outlet property="velocityLabel" destination="kp2-0R-R0C" id="Npz-N6-kSs"/>
                         <outlet property="velocitySlider" destination="vhC-ZO-QLz" id="u1U-9S-TdD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="192" y="40"/>
+            <point key="canvasLocation" x="191.6015625" y="39.84375"/>
         </scene>
     </scenes>
 </document>

@@ -14,17 +14,25 @@ class GameViewController: UIViewController {
     var currentGame: GameScene!
     
     @IBOutlet weak var angleSlider: UISlider!
-    
     @IBOutlet weak var angleLabel: UILabel!
-    
     @IBOutlet weak var velocitySlider: UISlider!
-    
     @IBOutlet weak var velocityLabel: UILabel!
-    
     @IBOutlet weak var launchButton: UIButton!
-    
-    
     @IBOutlet weak var playerNumber: UILabel!
+    @IBOutlet weak var scorePlayerOne: UILabel!
+    @IBOutlet weak var scorePlayerTwo: UILabel!
+    
+    var scoreOne = 0 {
+        didSet {
+            scorePlayerOne.text = "Score : \(scoreOne)"
+        }
+    }
+    
+    var scoreTwo = 0 {
+        didSet {
+            scorePlayerTwo.text = "Score : \(scoreTwo)"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,11 +59,11 @@ class GameViewController: UIViewController {
             view.showsNodeCount = true
         }
     }
-
+    
     override var shouldAutorotate: Bool {
         return true
     }
-
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
@@ -63,7 +71,7 @@ class GameViewController: UIViewController {
             return .all
         }
     }
-
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -103,5 +111,4 @@ class GameViewController: UIViewController {
         
         launchButton.isHidden = false
     }
-
 }

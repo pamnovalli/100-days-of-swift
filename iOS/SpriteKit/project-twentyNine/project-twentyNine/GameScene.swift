@@ -47,12 +47,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         player2 = SKSpriteNode(imageNamed: "player")
         player2.name = "player2"
-        player2.physicsBody = SKPhysicsBody(circleOfRadius: player2.size.width)
+        player2.physicsBody = SKPhysicsBody(circleOfRadius: player2.size.width / 2)
         player2.physicsBody?.categoryBitMask = CollisionTypes.player.rawValue
         player2.physicsBody?.collisionBitMask = CollisionTypes.banana.rawValue
         player2.physicsBody?.contactTestBitMask = CollisionTypes.banana.rawValue
         player2.physicsBody?.isDynamic = false
-
+        
         let player2Building = buildings[buildings.count - 2]
         player2.position = CGPoint(x: player2Building.position.x, y: player2Building.position.y + ((player2Building.size.height + player2.size.height) / 2))
         addChild(player2)
@@ -145,15 +145,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if firstNode.name == "banana" && secondNode.name == "building" {
             bananaHit(building: secondNode, atPoint: contact.contactPoint)
-
+            
         }
         
         if firstNode.name == "banana" && secondNode.name == "player1" {
+            viewController.scoreTwo += 1
             destroy(player: player1)
-
+            
         }
         
         if firstNode.name == "banana" && secondNode.name == "player2" {
+            viewController.scoreOne += 1
             destroy(player: player2)
         }
     }
@@ -177,6 +179,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             let transition = SKTransition.doorway(withDuration: 1.5)
             self.view?.presentScene(newGame, transition: transition)
+        }
+        
+        if self.viewController.scoreTwo >= 1 || self.viewController.scoreOne >= 1 {
+            let image = UIImageView(image: UIImage(named: "gameOver"))
+            
+            viewController.view.addSubview(image)
+            
+            image.translatesAutoresizingMaskIntoConstraints = false
+            
+            NSLayoutConstraint.activate([
+                image.topAnchor.constraint(equalTo: viewController.view.topAnchor, constant: 100),
+                image.bottomAnchor.constraint(equalTo: viewController.view.bottomAnchor, constant: -100),
+                image.leadingAnchor.constraint(equalTo: viewController.view.leadingAnchor, constant: 100),
+                image.trailingAnchor.constraint(equalTo: viewController.view.trailingAnchor, constant: -100)
+            ])
         }
     }
     
