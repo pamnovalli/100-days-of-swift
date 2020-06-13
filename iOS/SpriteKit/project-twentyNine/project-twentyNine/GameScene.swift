@@ -181,7 +181,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.view?.presentScene(newGame, transition: transition)
         }
         
-        if self.viewController.scoreTwo >= 1 || self.viewController.scoreOne >= 1 {
+        if self.viewController.scoreTwo >= 5 || self.viewController.scoreOne >= 5 {
             let image = UIImageView(image: UIImage(named: "gameOver"))
             
             viewController.view.addSubview(image)
