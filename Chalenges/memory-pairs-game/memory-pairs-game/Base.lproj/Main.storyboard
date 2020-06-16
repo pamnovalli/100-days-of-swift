@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Hk-kv-mWN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cards Grid Collection View Controller-->
+        <scene sceneID="tjC-Gp-gdE">
+            <objects>
+                <collectionViewController id="2Hk-kv-mWN" customClass="CardsGridCollectionViewController" customModule="memory_pairs_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="MOc-LP-Gbx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6mz-wR-aVY">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="avN-Qc-6Xy" customClass="CardCollectionViewCell" customModule="memory_pairs_game" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Od5-q7-rlG">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMc-X4-ugC">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="120"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="120" id="TmV-Qj-y2V"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="dkh-Ep-S74"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="cardTapped:" destination="avN-Qc-6Xy" eventType="touchUpInside" id="BuG-v6-5Bq"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="BMc-X4-ugC" secondAttribute="trailing" id="P5c-yf-GZQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="BMc-X4-ugC" secondAttribute="bottom" id="b2l-00-LuG"/>
+                                        <constraint firstItem="BMc-X4-ugC" firstAttribute="top" secondItem="Od5-q7-rlG" secondAttribute="top" id="gru-QI-Ohn"/>
+                                        <constraint firstItem="BMc-X4-ugC" firstAttribute="leading" secondItem="Od5-q7-rlG" secondAttribute="leading" id="j1h-nG-KYO"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="btnCard" destination="BMc-X4-ugC" id="cCF-jr-2Zg"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="2Hk-kv-mWN" id="BRq-au-26V"/>
+                            <outlet property="delegate" destination="2Hk-kv-mWN" id="xgX-iw-pdt"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5l-W0-oBU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="363.768115942029" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
