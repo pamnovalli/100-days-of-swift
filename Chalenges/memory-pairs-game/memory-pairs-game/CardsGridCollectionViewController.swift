@@ -9,13 +9,16 @@
 import UIKit
 
 class CardsGridCollectionViewController: UICollectionViewController {
-    private let itemsPerRow: CGFloat = 3
-    private let sectionInsets = UIEdgeInsets(top: 50.0,
-    left: 20.0,
-    bottom: 50.0,
-    right: 20.0)
+    private let sectionInsets = UIEdgeInsets(
+        top: 30.0,
+        left: 30.0,
+        bottom: 1.0,
+        right: 30.0
+    )
     var imagesRandom = [""]
-    var images = ["alien1", "alien2", "nerd1", "nerd2", "OMG1", "OMG2", "halo1", "halo2"]
+    var images = ["alien1", "alien2", "nerd1", "nerd2", "OMG1", "OMG2",
+                  "halo1", "halo2", "ghost1", "ghost2", "robot1", "robot2",
+                  "clown1", "clown2","tongue1", "tongue2", "heart1", "heart2"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +31,10 @@ class CardsGridCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CardCollectionViewCell
-        cell.backgroundColor = .gray
-//        let image = imagesRandom[indexPath.row]
-//        cell.imgCard.image = UIImage(named: image)
+        let image = imagesRandom[indexPath.row]
         cell.btnCard.backgroundColor = .blue
-        
+        cell.imgCard.image = UIImage(named: image)
+        cell.imgCard.isHidden = true
         return cell
     }
 }
@@ -43,9 +45,7 @@ extension CardsGridCollectionViewController : UICollectionViewDelegateFlowLayout
                       layout collectionViewLayout: UICollectionViewLayout,
                       sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-    let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-    let availableWidth = view.frame.width - paddingSpace
-    let widthPerItem = availableWidth / itemsPerRow
+    let widthPerItem = view.frame.width / 4
     
     return CGSize(width: widthPerItem, height: widthPerItem)
   }
@@ -55,10 +55,10 @@ extension CardsGridCollectionViewController : UICollectionViewDelegateFlowLayout
                       insetForSectionAt section: Int) -> UIEdgeInsets {
     return sectionInsets
   }
-  
+
   func collectionView(_ collectionView: UICollectionView,
                       layout collectionViewLayout: UICollectionViewLayout,
                       minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-    return sectionInsets.left
+    return 5
   }
 }
