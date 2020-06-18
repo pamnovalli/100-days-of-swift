@@ -146,7 +146,6 @@ class ViewController: UIViewController {
         currentAnswer.text = currentAnswer.text?.appending(buttonTitle)
         activatedButtons.append(sender)
         sender.isHidden = true
-        
     }
     
     @objc func submitTapped(_ sender: UIButton) {
