@@ -1,6 +1,4 @@
-
 import Foundation
-import UIKit
 
 protocol MemoryGameProtocol: AnyObject {
     func setCards(_ cards: [Card])
@@ -52,7 +50,7 @@ class MemoryGamePresenter {
     
     private func createCards() {
         for image in images {
-            let card = Card(image: UIImage(named: image) ?? UIImage())
+            let card = Card(image: image)
             cards.append(card)
             cards.append(Card(card: card))
         }

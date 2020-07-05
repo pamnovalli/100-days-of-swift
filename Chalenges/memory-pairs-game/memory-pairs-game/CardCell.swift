@@ -11,7 +11,7 @@ import UIKit
 class CardCell: UICollectionViewCell {
     @IBOutlet private weak var frontImageView: UIImageView!
     @IBOutlet private weak var backImageView: UIImageView!
-    private var card = Card(image: UIImage())
+    private var card = Card(image: "")
     
     func load(card: Card) {
         self.card = card
@@ -21,7 +21,7 @@ class CardCell: UICollectionViewCell {
     }
     
     func setupCard() {
-        frontImageView.image = card.image
+        frontImageView.image = UIImage(named: card.image)
         
         frontImageView.layer.cornerRadius = 5.0
         backImageView.layer.cornerRadius = 5.0

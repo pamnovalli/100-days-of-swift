@@ -11,10 +11,10 @@ import Foundation
 
 struct Card: Equatable {
     var id: String
-    var image: UIImage
+    var image: String
     var show: Bool
     
-    init(image: UIImage) {
+    init(image: String) {
         self.id = NSUUID().uuidString
         self.image = image
         self.show = false

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MemoryGameCollectionViewController: UICollectionViewController {
+final class MemoryGameCollectionViewController: UICollectionViewController {
     private var cards = [Card]()
     private let presenter = MemoryGamePresenter()
     
@@ -33,7 +33,7 @@ class MemoryGameCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? CardCell
         
         guard let cardCell = cell else { return UICollectionViewCell() }
-        
+                
         cardCell.load(card: presenter.cardAtIndex(indexPath.item))
         
         return cardCell
@@ -58,7 +58,7 @@ extension MemoryGameCollectionViewController: MemoryGameProtocol {
         }
     }
     
-    func showCard(_ index: Int, show: Bool) {
+    func showCard(_ index: Int, show: Bool)  {
         let cell = collectionView.cellForItem(at: IndexPath(item: index, section: 0))
         
         (cell as? CardCell)?.showCard(show)
