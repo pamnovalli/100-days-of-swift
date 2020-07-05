@@ -12,8 +12,10 @@
 		B387C1F02498445C003B014A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B387C1EE2498445C003B014A /* Main.storyboard */; };
 		B387C1F22498445F003B014A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B387C1F12498445F003B014A /* Assets.xcassets */; };
 		B387C1F52498445F003B014A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B387C1F32498445F003B014A /* LaunchScreen.storyboard */; };
-		B387C1FD2498450E003B014A /* CardsGridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B387C1FC2498450E003B014A /* CardsGridCollectionViewController.swift */; };
-		B387C1FF24984D46003B014A /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B387C1FE24984D46003B014A /* CardCollectionViewCell.swift */; };
+		B387C1FD2498450E003B014A /* MemoryGameCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B387C1FC2498450E003B014A /* MemoryGameCollectionViewController.swift */; };
+		B387C1FF24984D46003B014A /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B387C1FE24984D46003B014A /* CardCell.swift */; };
+		B3E1839D24B119C700054679 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1839C24B119C700054679 /* Card.swift */; };
+		B3E1839F24B12DFB00054679 /* MemoryGamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1839E24B12DFB00054679 /* MemoryGamePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +26,10 @@
 		B387C1F12498445F003B014A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B387C1F42498445F003B014A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B387C1F62498445F003B014A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B387C1FC2498450E003B014A /* CardsGridCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGridCollectionViewController.swift; sourceTree = "<group>"; };
-		B387C1FE24984D46003B014A /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		B387C1FC2498450E003B014A /* MemoryGameCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameCollectionViewController.swift; sourceTree = "<group>"; };
+		B387C1FE24984D46003B014A /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		B3E1839C24B119C700054679 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B3E1839E24B12DFB00054679 /* MemoryGamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGamePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +68,10 @@
 				B387C1F12498445F003B014A /* Assets.xcassets */,
 				B387C1F32498445F003B014A /* LaunchScreen.storyboard */,
 				B387C1F62498445F003B014A /* Info.plist */,
-				B387C1FC2498450E003B014A /* CardsGridCollectionViewController.swift */,
-				B387C1FE24984D46003B014A /* CardCollectionViewCell.swift */,
+				B387C1FC2498450E003B014A /* MemoryGameCollectionViewController.swift */,
+				B387C1FE24984D46003B014A /* CardCell.swift */,
+				B3E1839C24B119C700054679 /* Card.swift */,
+				B3E1839E24B12DFB00054679 /* MemoryGamePresenter.swift */,
 			);
 			path = "memory-pairs-game";
 			sourceTree = "<group>";
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B387C1FF24984D46003B014A /* CardCollectionViewCell.swift in Sources */,
-				B387C1FD2498450E003B014A /* CardsGridCollectionViewController.swift in Sources */,
+				B3E1839F24B12DFB00054679 /* MemoryGamePresenter.swift in Sources */,
+				B387C1FF24984D46003B014A /* CardCell.swift in Sources */,
+				B387C1FD2498450E003B014A /* MemoryGameCollectionViewController.swift in Sources */,
+				B3E1839D24B119C700054679 /* Card.swift in Sources */,
 				B387C1E92498445C003B014A /* AppDelegate.swift in Sources */,
 				B387C1EB2498445C003B014A /* SceneDelegate.swift in Sources */,
 			);
